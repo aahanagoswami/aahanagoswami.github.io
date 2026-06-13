@@ -350,9 +350,9 @@ export default function App() {
                 style={{ border: "1px solid var(--hair)", background: "var(--card)" }}
               >
                 <div className="flex gap-4 items-start">
-                  <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center shrink-0">
+                  <div className="w-14 h-14 overflow-hidden flex items-center justify-center shrink-0">
                     {exp.logo ? (
-                      <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
+                      <img src={exp.logo} alt={exp.company} className="max-w-full max-h-full object-contain" style={exp.id === "second-city" ? { filter: "var(--logo-invert, invert(1))" } : undefined} />
                     ) : exp.type === "work" || exp.type === "advocacy" ? (
                       <div className="w-full h-full rounded-xl flex items-center justify-center" style={{ background: "var(--tag-bg)" }}>
                         <Briefcase className="w-5 h-5" style={{ color: "var(--blue)" }} />
@@ -371,7 +371,7 @@ export default function App() {
                       {exp.description.map((bullet, bIdx) => (
                         <li key={bIdx} className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ background: "var(--blue)" }}></span>
-                          <span>{bullet}</span>
+                          <span dangerouslySetInnerHTML={{ __html: bullet.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" style="color: var(--blue); text-decoration: underline;">$1</a>') }} />
                         </li>
                       ))}
                     </ul>

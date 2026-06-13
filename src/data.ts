@@ -435,10 +435,11 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: "Content Media & Operations Support",
     company: "Graaphene",
     period: "May 2021 – Sep 2023",
-    logo: "",
+    logo: "/images/logos/graaphene.png",
     description: [
       "Built operations, user engagement processes, and service delivery from the ground up for a backup childcare startup serving working parents — alongside one other co-founder.",
-      "Created operational playbooks, matching protocols, and SLAs between parents and certified childcare providers across Cook County."
+      "Created operational playbooks, matching protocols, and SLAs between parents and certified childcare providers across Cook County.",
+      "Produced 100+ pieces of branded content across Instagram, driving parent engagement and provider acquisition. [View content work →](https://www.instagram.com/graaphene/)"
     ],
     skills: ["Creative Writing", "Communication", "Operations", "Business Development", "Social Media", "Content Strategy"],
     type: "work"
@@ -460,7 +461,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: "Summer Intern",
     company: "Future Founders",
     period: "May 2022 – Aug 2022",
-    logo: "/images/logos/futurefounders.svg",
+    logo: "/images/logos/futurefounders.png",
     description: [
       "Participated in an entrepreneurship-focused internship program, developing teamwork, creative writing, and business development skills in a startup ecosystem."
     ],

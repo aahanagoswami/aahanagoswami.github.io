@@ -27,6 +27,7 @@
   --modal-backdrop: rgba(29, 29, 31, 0.4);
   --input-bg: #ffffff;
   --tag-bg: rgba(0, 0, 0, 0.04);
+  --logo-invert: invert(1);
   --connect-bg: #1d1d1f;
   --connect-text: #ffffff;
   --connect-muted: #a1a1a6;
@@ -60,6 +61,7 @@
   --modal-backdrop: rgba(0, 0, 0, 0.6);
   --input-bg: #2c2c2e;
   --tag-bg: rgba(255, 255, 255, 0.08);
+  --logo-invert: invert(0);
   --connect-bg: #1c1c1e;
   --connect-text: #f5f5f7;
   --connect-muted: #8e8e93;

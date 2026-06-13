@@ -146,7 +146,7 @@ export default function App() {
             <a href="#about" className="nav-link">About</a>
             <a href="#strengths" className="nav-link">Capabilities</a>
             <a href="#experience" className="nav-link">Experience</a>
-            <a href="#work" className="nav-link">Work</a>
+            <a href="#work" className="nav-link">Portfolio</a>
             <a href="#connect" className="nav-link">Connect</a>
             <button
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
@@ -183,7 +183,7 @@ export default function App() {
                 { href: "#about", label: "About" },
                 { href: "#strengths", label: "Capabilities" },
                 { href: "#experience", label: "Experience" },
-                { href: "#work", label: "Work" },
+                { href: "#work", label: "Portfolio" },
                 { href: "#connect", label: "Leave a Note" },
               ].map((link) => (
                 <a
@@ -437,60 +437,77 @@ export default function App() {
           {/* Apple Discover-style editorial layout */}
           {!selectedWork && filteredWork.length > 0 && (
             <div className="space-y-4">
-              {/* Hero card — full width with large cover image */}
-              <button
-                onClick={() => setSelectedWork(filteredWork[0])}
-                className="w-full text-left rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.003]"
-                style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
-              >
-                {filteredWork[0].image && (
-                  <div className="w-full h-[280px] md:h-[340px] overflow-hidden">
-                    <img src={filteredWork[0].image} alt={filteredWork[0].title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  </div>
-                )}
-                <div className="p-6 md:p-8">
-                  <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full inline-block mb-3" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                    {filteredWork[0].category === "pr" ? "Strategy & PR" : filteredWork[0].category === "research" ? "Product Analysis" : filteredWork[0].category === "journalism" ? "Research & Insight" : "Featured"}
-                  </span>
-                  <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-2" style={{ color: "var(--ink)" }}>
-                    {filteredWork[0].title}
-                  </h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
-                    {filteredWork[0].description}
-                  </p>
-                </div>
-              </button>
+              {filteredWork.map((sample, idx) => {
+                const isHero = idx % 3 === 0;
 
-              {/* Two-column row with image + text side by side (like Apple Discover bottom row) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {filteredWork.slice(1).map((sample) => (
-                  <button
-                    key={sample.id}
-                    onClick={() => setSelectedWork(sample)}
-                    className="w-full text-left rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.003]"
-                    style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
-                  >
-                    <div className="flex items-center gap-0">
-                      <div className="flex-1 p-5 md:p-6">
-                        <span className="text-[10px] font-semibold uppercase tracking-wider py-0.5 px-2 rounded-full inline-block mb-2" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                          {sample.category === "pr" ? "Strategy & PR" : sample.category === "research" ? "Product Analysis" : sample.category === "journalism" ? "Research & Insight" : "Featured"}
-                        </span>
-                        <h3 className="text-base md:text-lg font-bold leading-snug mb-2" style={{ color: "var(--ink)" }}>
-                          {sample.title}
-                        </h3>
-                        <p className="text-xs leading-relaxed line-clamp-3" style={{ color: "var(--ink-soft)" }}>
-                          {sample.description}
-                        </p>
-                      </div>
-                      {sample.image && (
-                        <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] rounded-2xl overflow-hidden shrink-0 mr-5">
-                          <img src={sample.image} alt={sample.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                if (isHero) {
+                  return (
+                    <div key={sample.id}>
+                      {/* Hero card — text left, large image right */}
+                      <button
+                        onClick={() => setSelectedWork(sample)}
+                        className="w-full text-left rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.003]"
+                        style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
+                      >
+                        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr]">
+                          <div className="p-7 md:p-9 flex flex-col justify-between">
+                            <div>
+                              <span className="text-[10px] font-semibold uppercase tracking-wider py-0.5 px-2.5 rounded-full inline-block mb-3" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                                {sample.category === "pr" ? "Strategy & PR" : sample.category === "research" ? "Product Analysis" : sample.category === "journalism" ? "Research & Insight" : "Featured"}
+                              </span>
+                              <h3 className="text-2xl md:text-[28px] font-bold tracking-tight leading-tight mb-3" style={{ color: "var(--ink)" }}>
+                                {sample.title}
+                              </h3>
+                              <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+                                {sample.description}
+                              </p>
+                            </div>
+                          </div>
+                          {sample.image && (
+                            <div className="h-[220px] md:h-[300px] overflow-hidden">
+                              <img src={sample.image} alt={sample.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            </div>
+                          )}
+                        </div>
+                      </button>
+
+                      {/* Pair of square cards right after the hero */}
+                      {filteredWork[idx + 1] && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                          {filteredWork.slice(idx + 1, idx + 3).map((pair) => (
+                            <button
+                              key={pair.id}
+                              onClick={() => setSelectedWork(pair)}
+                              className="w-full text-left rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.003]"
+                              style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
+                            >
+                              <div className="flex items-center p-5 md:p-6 gap-4">
+                                <div className="flex-1 min-w-0">
+                                  <span className="text-[10px] font-semibold uppercase tracking-wider py-0.5 px-2 rounded-full inline-block mb-2" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                                    {pair.category === "pr" ? "Strategy & PR" : pair.category === "research" ? "Product Analysis" : pair.category === "journalism" ? "Research & Insight" : "Featured"}
+                                  </span>
+                                  <h3 className="text-base md:text-lg font-bold leading-snug mb-1.5" style={{ color: "var(--ink)" }}>
+                                    {pair.title}
+                                  </h3>
+                                  <p className="text-xs leading-relaxed line-clamp-2" style={{ color: "var(--ink-soft)" }}>
+                                    {pair.description}
+                                  </p>
+                                </div>
+                                {pair.image && (
+                                  <div className="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden shrink-0 bg-black/5">
+                                    <img src={pair.image} alt={pair.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                  </div>
+                                )}
+                              </div>
+                            </button>
+                          ))}
                         </div>
                       )}
                     </div>
-                  </button>
-                ))}
-              </div>
+                  );
+                }
+                return null;
+              })}
             </div>
           )}
 

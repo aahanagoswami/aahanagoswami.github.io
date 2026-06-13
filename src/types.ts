@@ -27,6 +27,7 @@ export interface ExperienceItem {
   role: string;
   company: string;
   period: string;
+  logo?: string;
   description: string[];
   skills: string[];
   type: "work" | "advocacy" | "education";

@@ -328,9 +328,9 @@ The authors conclude by urging student participation in electoral processes as t
   {
     id: "resume",
     title: "Full Résumé — Experience, Skills & Honors",
-    subtitle: "Summa Cum Laude · 3.8 GPA · Writing Center · Graaphene · Dean's List",
+    subtitle: "Summa Cum Laude · 4.0 GPA · Writing Center · Graaphene · Dean's List",
     description: "Summa Cum Laude graduate in Communication and English Literature, with startup operations experience, competitive writing awards, and a track record of turning ambiguity into structured outcomes.",
-    outcome: "Summa Cum Laude · 3.8 GPA · Multiple awards · 2 professional roles",
+    outcome: "Summa Cum Laude · 4.0 GPA · Multiple awards · 2 professional roles",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
     url: "https://agosw2.myportfolio.com/resume",
     category: "all",
@@ -360,7 +360,7 @@ Summa Cum Laude graduate in Communication and English Literature from the Univer
 ---
 
 ### EDUCATION & HONORS
-* **B.A. in Communication and English Literature, Summa Cum Laude** — University of Illinois Chicago (UIC), GPA: 3.8/4.0.
+* **B.A. in Communication and English Literature, Summa Cum Laude** — University of Illinois Chicago (UIC), GPA: 4.0/4.0.
 * Honors: Summa Cum Laude, competitive pitch competition champion, Dean's List, accessibility advocate team leader.`
   },
   {
@@ -392,39 +392,128 @@ Inside this custom database, you will find writing assets created to build real 
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
   {
-    id: "uic-advisor",
-    role: "Writing Consultant",
-    company: "University of Illinois Chicago Writing Center",
-    period: "2023 - 2025",
+    id: "uic-ra",
+    role: "Resident Assistant",
+    company: "University of Illinois Chicago",
+    period: "Feb 2025 – Present",
+    logo: "/images/logos/uic.png",
     description: [
-      "Guided diverse student writers through structured editing strategies, enhancing overall thesis articulation, document organization, and stylistic clarity.",
-      "Collaborated with faculty to host targeted workshops on analytical writing, user focus, and AP style compliance."
+      "Coordinate monthly community engagement initiatives based on real-life skills development — implementing targeted strategies including one-on-one conversations and relationship building.",
+      "Manage a residential floor of students, resolving conflicts, enforcing policies, and fostering an inclusive living environment."
     ],
-    skills: ["Editing", "Pedagogy", "Audience Analysis", "Coaching"],
+    skills: ["People Management", "Leadership", "Conflict Resolution", "Community Building"],
     type: "work"
   },
   {
-    id: "graaphene",
-    role: "Content, Media & Operations Support",
-    company: "Graaphene — AI Powered Care Marketplace",
-    period: "2024 - 2025",
+    id: "uic-writing",
+    role: "Writing Consultant",
+    company: "University of Illinois Chicago (UIC) Writing Center",
+    period: "Jan 2025 – May 2026",
+    logo: "/images/logos/uic.png",
     description: [
-      "Created operational playbooks, matching protocols, and service level agreements between parents and certified childcare providers.",
-      "Headed digital marketing campaigns across social media channels, gaining traction and engagement among initial customer circles."
+      "Selected through a competitive application process (top 10% — 5 of 57 applicants) to deliver one-on-one writing consultations to a diverse student population.",
+      "Coach students on structural clarity, argumentation, audience analysis, and revision strategies across academic disciplines."
     ],
-    skills: ["Business Development", "Customer Journey", "Social Media Copywriting"],
+    skills: ["Editing", "People Management", "Critical Thinking", "Coaching", "Pedagogy"],
+    type: "work"
+  },
+  {
+    id: "great-lakes",
+    role: "Believe in Students · Intern",
+    company: "Great Lakes FAST Fund Consortium",
+    period: "Aug 2024 – May 2026",
+    logo: "/images/logos/greatlakes.png",
+    description: [
+      "Collaborated with a student fellow to champion full transparency within the cost of college education — event planning, surveying 600+ students, and advocating for policy change.",
+      "Co-authored and published 'The Price of Success — Is Paying College Tuition Worth It?' in UIC Bonfire."
+    ],
+    skills: ["Research Skills", "Communication", "Event Planning", "Advocacy", "Data Analysis"],
+    type: "advocacy"
+  },
+  {
+    id: "graaphene",
+    role: "Content Media & Operations Support",
+    company: "Graaphene",
+    period: "May 2021 – Sep 2023",
+    logo: "",
+    description: [
+      "Built operations, user engagement processes, and service delivery from the ground up for a backup childcare startup serving working parents — alongside one other co-founder.",
+      "Created operational playbooks, matching protocols, and SLAs between parents and certified childcare providers across Cook County."
+    ],
+    skills: ["Creative Writing", "Communication", "Operations", "Business Development", "Social Media", "Content Strategy"],
+    type: "work"
+  },
+  {
+    id: "nao-now",
+    role: "Content Developer · Intern",
+    company: "Nao Now",
+    period: "Jun 2023 – Aug 2023",
+    logo: "/images/logos/naonow.png",
+    description: [
+      "Developed content strategy and produced editorial assets for a digital platform, translating complex ideas into engaging, audience-focused narratives."
+    ],
+    skills: ["Content Development", "Creative Writing", "Digital Media"],
+    type: "work"
+  },
+  {
+    id: "future-founders",
+    role: "Summer Intern",
+    company: "Future Founders",
+    period: "May 2022 – Aug 2022",
+    logo: "/images/logos/futurefounders.png",
+    description: [
+      "Participated in an entrepreneurship-focused internship program, developing teamwork, creative writing, and business development skills in a startup ecosystem."
+    ],
+    skills: ["Teamwork", "Creative Writing", "Entrepreneurship", "Business Planning"],
     type: "work"
   },
   {
     id: "uic-academic",
     role: "B.A. in Communication & English Literature · Summa Cum Laude",
     company: "University of Illinois Chicago (UIC)",
-    period: "Class of 2025 - Graduate",
+    period: "Aug 2023 – May 2026",
+    logo: "/images/logos/uic.png",
     description: [
-      "Summa Cum Laude · GPA: 3.8/4.0. Completed advanced coursework in Persuasive Writing, Rhetorical Theory, Technical Documentation, and Social Media Marketing.",
-      "Recipient of competitive pitch writing and oral presentation awards, led accessibility advocacy across campus organizations."
+      "Summa Cum Laude · GPA: 4.0/4.0. Coursework in Literature, Philosophy, Critical Reasoning, and Technical Writing.",
+      "Activities: Sigma Tau Delta, UIC Honors College, Faculty Union, Red Shoes Review Assistant Editor, UIC Writing Center Tutor."
     ],
-    skills: ["Strategic Communications", "Rhetorical Analysis", "Media Studies", "Research Methods"],
+    skills: ["Strategic Communications", "Rhetorical Analysis", "Critical Reasoning", "Philosophy"],
+    type: "education"
+  },
+  {
+    id: "second-city",
+    role: "Improvisation & Stand-up Comedy · 50% Scholarship",
+    company: "The Second City",
+    period: "May 2017 – Jun 2017",
+    logo: "/images/logos/secondcity.png",
+    description: [
+      "Won 50% scholarship to attend summer camp. Developed creative thinking, active listening, brainstorming, and performance confidence through improv and stand-up."
+    ],
+    skills: ["Improv Comedy", "Communication", "Creative Thinking", "Public Speaking"],
+    type: "education"
+  },
+  {
+    id: "niu-writing",
+    role: "Creative Writing Day Camp",
+    company: "Northern Illinois University",
+    period: "Jul 2017",
+    logo: "/images/logos/niu.png",
+    description: [
+      "Sharpened foundational skills in writing stories, poetry, and screenplays — learning to overcome emotional filters that block creative inspiration."
+    ],
+    skills: ["Creative Writing", "Storytelling", "Poetry"],
+    type: "education"
+  },
+  {
+    id: "conant",
+    role: "High School Diploma · Liberal Arts & Sciences",
+    company: "James B. Conant High School",
+    period: "2018 – 2023",
+    logo: "/images/logos/conant.png",
+    description: [
+      "Foundation in liberal arts and sciences with emphasis on analytical writing, communication, and leadership."
+    ],
+    skills: ["Liberal Arts", "Leadership", "Academic Writing"],
     type: "education"
   }
 ];

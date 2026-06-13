@@ -337,30 +337,36 @@ export default function App() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4">
             {EXPERIENCE_DATA.filter((exp) => {
               if (activeTab === "all-exp") return true;
-              if (activeTab === "work" && exp.type === "work") return true;
+              if (activeTab === "work" && (exp.type === "work" || exp.type === "advocacy")) return true;
               if (activeTab === "advocacy" && exp.type === "education") return true;
               return false;
             }).map((exp) => (
               <div
                 key={exp.id}
-                className="p-8 rounded-[22px] transition-colors flex flex-col md:flex-row gap-6 justify-between items-start"
+                className="p-6 md:p-8 rounded-[22px] transition-colors flex flex-col md:flex-row gap-5 justify-between items-start"
                 style={{ border: "1px solid var(--hair)", background: "var(--card)" }}
               >
                 <div className="flex gap-4 items-start">
-                  <div className="p-3 rounded-2xl shadow-sm" style={{ background: "var(--bg)", border: "1px solid var(--hair)" }}>
-                    {exp.type === "work" ? <Briefcase className="w-5 h-5" style={{ color: "var(--blue)" }} /> : <GraduationCap className="w-5 h-5" style={{ color: "var(--indigo)" }} />}
+                  <div className="w-11 h-11 rounded-2xl shadow-sm overflow-hidden flex items-center justify-center shrink-0" style={{ background: "var(--bg)", border: "1px solid var(--hair)" }}>
+                    {exp.logo ? (
+                      <img src={exp.logo} alt={exp.company} className="w-7 h-7 object-contain" />
+                    ) : exp.type === "work" || exp.type === "advocacy" ? (
+                      <Briefcase className="w-5 h-5" style={{ color: "var(--blue)" }} />
+                    ) : (
+                      <GraduationCap className="w-5 h-5" style={{ color: "var(--indigo)" }} />
+                    )}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold leading-snug" style={{ color: "var(--ink)" }}>{exp.role}</h3>
-                    <div className="text-sm font-medium mt-1" style={{ color: "var(--ink-soft)" }}>{exp.company}</div>
+                    <h3 className="text-lg font-bold leading-snug" style={{ color: "var(--ink)" }}>{exp.role}</h3>
+                    <div className="text-sm font-medium mt-0.5" style={{ color: "var(--ink-soft)" }}>{exp.company}</div>
 
-                    <ul className="mt-4 space-y-2 max-w-2xl text-sm" style={{ color: "var(--ink)" }}>
+                    <ul className="mt-3 space-y-2 max-w-2xl text-sm" style={{ color: "var(--ink)" }}>
                       {exp.description.map((bullet, bIdx) => (
                         <li key={bIdx} className="flex items-start gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ background: "var(--hair)" }}></span>
+                          <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ background: "var(--blue)" }}></span>
                           <span>{bullet}</span>
                         </li>
                       ))}
@@ -368,14 +374,14 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="flex flex-col items-start md:items-end justify-between h-full gap-4 w-full md:w-auto">
-                  <span className="text-xs font-semibold py-1.5 px-3 rounded-full" style={{ color: "var(--ink-soft)", background: "var(--tag-bg)" }}>
+                <div className="flex flex-col items-start md:items-end justify-between h-full gap-3 w-full md:w-auto">
+                  <span className="text-xs font-semibold py-1.5 px-3 rounded-full whitespace-nowrap" style={{ color: "var(--ink-soft)", background: "var(--tag-bg)" }}>
                     {exp.period}
                   </span>
 
                   <div className="flex flex-wrap gap-1 md:justify-end">
                     {exp.skills.map((skill, sIdx) => (
-                      <span key={sIdx} className="text-[11px] font-medium py-1 px-2.5 rounded-full" style={{ background: "var(--card)", color: "var(--ink)", border: "1px solid var(--hair)" }}>
+                      <span key={sIdx} className="text-[10px] font-medium py-1 px-2 rounded-full" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)" }}>
                         {skill}
                       </span>
                     ))}

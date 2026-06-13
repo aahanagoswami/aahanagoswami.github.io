@@ -2,58 +2,58 @@ import { Strength, WorkPiece, ExperienceItem } from "./types";
 
 export const STRENGTHS_DATA: Strength[] = [
   {
+    id: "ai",
+    title: "Accelerates research and content with AI.",
+    boldHighlight: "Pairs Claude, ChatGPT, Gemini, and Canva AI with sharp editorial judgment.",
+    description: "Integrates AI tools across every workflow stage — from research synthesis and drafting to design iteration — cutting turnaround time while maintaining quality and originality.",
+    tag: "AI-Powered Workflows · Claude · ChatGPT · Gemini · Canva AI",
+    iconName: "cpu",
+    colorClass: "var(--indigo)"
+  },
+  {
     id: "co-founder",
-    title: "Founding member of Graaphene.",
-    boldHighlight: "Built operations, content, and media for an AI-powered care marketplace.",
-    description: "Designed user-engagement processes and coordinated with parents, caregivers, and partners to resolve issues and improve program effectiveness.",
-    tag: "Content, Media & Operations Support · Graaphene",
+    title: "Built operations from zero at an AI startup.",
+    boldHighlight: "Designed onboarding, content strategy, and service protocols for Graaphene.",
+    description: "Solved operational gaps by creating playbooks, SLAs, and matching workflows for an AI-powered care marketplace — coordinating across parents, caregivers, and partners to launch and scale.",
+    tag: "Problem Solving & Operations · Graaphene",
     iconName: "headset",
     colorClass: "var(--blue)"
   },
   {
     id: "writing",
-    title: "Refined every word.",
-    boldHighlight: "Delivered individualized writing consultations.",
-    description: "Selected through a competitive process to edit for clarity, structure, and audience — and to build clients' analytical thinking and revision strategies.",
-    tag: "Writing Consultant · UIC Writing Center",
+    title: "Sharpened arguments through structured critique.",
+    boldHighlight: "Delivered 1-on-1 consultations that strengthened analytical thinking and revision strategies.",
+    description: "Selected competitively to coach diverse writers on clarity, structure, and audience — applying critical thinking frameworks to transform rough drafts into persuasive, polished work.",
+    tag: "Critical Thinking & Coaching · UIC Writing Center",
     iconName: "pen",
     colorClass: "var(--green)"
   },
   {
     id: "social",
-    title: "Created 100+ posts.",
-    boldHighlight: "Grew presence across Instagram and Facebook.",
-    description: "Produced social content end to end — concept, copy, and publishing — to build engagement and brand voice.",
-    tag: "Content & Social",
+    title: "Produced 100+ campaigns from concept to publish.",
+    boldHighlight: "Grew brand engagement across Instagram and Facebook through design-driven content.",
+    description: "Applied design thinking to plan, write, and publish end-to-end social campaigns — testing formats, analyzing engagement data, and iterating on voice and visuals to maximize reach.",
+    tag: "Design Thinking & Content Strategy",
     iconName: "megaphone",
     colorClass: "var(--violet)"
   },
   {
     id: "awards",
-    title: "Won 3 awards.",
-    boldHighlight: "Recognized for competitive pitch writing.",
-    description: "Authored pitch materials for competitions and earned multiple awards for persuasive, audience-driven storytelling.",
-    tag: "Pitch & Persuasive Writing",
+    title: "Won 3 awards for persuasive pitch writing.",
+    boldHighlight: "Crafted competition-winning narratives with data-backed, audience-centered storytelling.",
+    description: "Combined persuasive writing with structured argumentation and negotiation skills to build pitch decks and presentations that outperformed in competitive evaluation.",
+    tag: "Negotiation & Persuasive Writing",
     iconName: "trophy",
     colorClass: "var(--amber)"
   },
   {
     id: "research",
-    title: "Researched 10+ products.",
-    boldHighlight: "Turned insight into recommendations.",
-    description: "Studied accessibility challenges and user needs, synthesizing findings into recommendations that informed product and service decisions.",
-    tag: "Market & User Research",
+    title: "Analyzed 10+ products to drive strategic decisions.",
+    boldHighlight: "Turned user research and accessibility insights into actionable recommendations.",
+    description: "Applied problem-solving frameworks to study usability challenges, synthesize findings, and deliver evidence-based recommendations that shaped product and service direction.",
+    tag: "Problem Solving & Product Analysis",
     iconName: "search",
     colorClass: "var(--rose)"
-  },
-  {
-    id: "ai",
-    title: "Works fluently with AI.",
-    boldHighlight: "Uses modern tools to move faster.",
-    description: "Applies AI tools to accelerate research, drafting, and content workflows — pairing them with strong editorial judgment.",
-    tag: "AI-Assisted Workflows",
-    iconName: "cpu",
-    colorClass: "var(--indigo)"
   }
 ];
 

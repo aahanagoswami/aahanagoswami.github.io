@@ -11,15 +11,6 @@ export const STRENGTHS_DATA: Strength[] = [
     colorClass: "var(--indigo)"
   },
   {
-    id: "co-founder",
-    title: "Built operations from zero at an AI startup.",
-    boldHighlight: "Architected onboarding, content strategy, and service playbooks that powered Graaphene's launch.",
-    description: "Identified operational gaps, designed scalable workflows, and coordinated across parents, caregivers, and partners — turning a blank slate into a functioning AI-powered care marketplace.",
-    tag: "Problem Solving & Operations · Graaphene",
-    iconName: "headset",
-    colorClass: "var(--blue)"
-  },
-  {
     id: "writing",
     title: "Sharpened arguments through structured critique.",
     boldHighlight: "Transformed rough drafts into persuasive, publish-ready work through 1-on-1 coaching.",
@@ -36,6 +27,15 @@ export const STRENGTHS_DATA: Strength[] = [
     tag: "Problem Solving & Product Analysis",
     iconName: "search",
     colorClass: "var(--rose)"
+  },
+  {
+    id: "co-founder",
+    title: "Built operations from zero at an AI startup.",
+    boldHighlight: "Architected onboarding, content strategy, and service playbooks that powered Graaphene's launch.",
+    description: "Identified operational gaps, designed scalable workflows, and coordinated across parents, caregivers, and partners — turning a blank slate into a functioning AI-powered care marketplace.",
+    tag: "Problem Solving & Operations · Graaphene",
+    iconName: "headset",
+    colorClass: "var(--blue)"
   },
   {
     id: "social",

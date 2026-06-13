@@ -225,7 +225,7 @@ export default function App() {
                 <span className="sub">Communication built to connect.</span>
               </h1>
               <p className="hero-lede">
-                Recent University of Illinois Chicago graduate working at the intersection of media, public perception, and social impact — through public relations, advocacy, and strategic communication.
+                Summa Cum Laude graduate in Communication and English Literature from UIC — working at the intersection of media, public perception, and social impact through public relations, advocacy, and strategic communication.
               </p>
 
               <div className="hero-cta">

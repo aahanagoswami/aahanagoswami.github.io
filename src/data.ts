@@ -89,7 +89,7 @@ Co-developed by B.A. Communication scholar Aahana Goswami, the initiative levera
 ---
 
 ### About Aahana Goswami
-Aahana Goswami is a senior B.A. Communication scholar with an English Minor at the University of Illinois Chicago, with background in tutoring at the Writing Center and startup operations. For media inquiries or collaboration, contact: **aasignshere@gmail.com**`
+Aahana Goswami graduated Summa Cum Laude with a B.A. in Communication and English Literature from the University of Illinois Chicago, with background in tutoring at the Writing Center and startup operations. For media inquiries or collaboration, contact: **aasignshere@gmail.com**`
   },
   {
     id: "usability-memo",
@@ -328,9 +328,9 @@ The authors conclude by urging student participation in electoral processes as t
   {
     id: "resume",
     title: "Full Résumé — Experience, Skills & Honors",
-    subtitle: "3.8 GPA · Writing Center · Graaphene · Dean's List · Pitch Competition Winner",
-    description: "Communication scholar with an English minor, startup operations experience, competitive writing awards, and a track record of turning ambiguity into structured outcomes — from coaching writers to building marketplace playbooks.",
-    outcome: "3.8 GPA · Multiple awards · 2 professional roles · Startup to campus impact",
+    subtitle: "Summa Cum Laude · 3.8 GPA · Writing Center · Graaphene · Dean's List",
+    description: "Summa Cum Laude graduate in Communication and English Literature, with startup operations experience, competitive writing awards, and a track record of turning ambiguity into structured outcomes.",
+    outcome: "Summa Cum Laude · 3.8 GPA · Multiple awards · 2 professional roles",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
     url: "https://agosw2.myportfolio.com/resume",
     category: "all",
@@ -341,7 +341,7 @@ Chicago, IL · aasignshere@gmail.com · [LinkedIn Profile](https://www.linkedin.
 ---
 
 ### PROFESSIONAL PROFILE
-Diligent, strategic, and creative senior Communication scholar and English Minor at the University of Illinois Chicago. Possesses proven capability in startup operations, writing program support, social media content, and community-facing advocacy.
+Summa Cum Laude graduate in Communication and English Literature from the University of Illinois Chicago. Proven capability in startup operations, writing program support, social media content, and community-facing advocacy.
 
 ---
 
@@ -360,8 +360,8 @@ Diligent, strategic, and creative senior Communication scholar and English Minor
 ---
 
 ### EDUCATION & HONORS
-* **B.A. in Communication, Minor in English** — University of Illinois Chicago (UIC), GPA: 3.8/4.0.
-* Honors: Competitve pitch competition champion, Dean's List student, accessibility advocate team leader.`
+* **B.A. in Communication and English Literature, Summa Cum Laude** — University of Illinois Chicago (UIC), GPA: 3.8/4.0.
+* Honors: Summa Cum Laude, competitive pitch competition champion, Dean's List, accessibility advocate team leader.`
   },
   {
     id: "full-portfolio",
@@ -417,14 +417,14 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
   },
   {
     id: "uic-academic",
-    role: "Bachelor of Arts in Communication / English Minor",
+    role: "B.A. in Communication & English Literature · Summa Cum Laude",
     company: "University of Illinois Chicago (UIC)",
     period: "Class of 2025 - Graduate",
     description: [
-      "GPA: 3.8/4.0. Completed advanced coursework in Persuasive Writing, Rhetorical Theory, Technical Documentation, and Social Media Marketing.",
-      "Recipient of competitive pitch writing and oral presentation awards, focusing of accessibility advocacy on campus."
+      "Summa Cum Laude · GPA: 3.8/4.0. Completed advanced coursework in Persuasive Writing, Rhetorical Theory, Technical Documentation, and Social Media Marketing.",
+      "Recipient of competitive pitch writing and oral presentation awards, led accessibility advocacy across campus organizations."
     ],
-    skills: ["Strategic Communications", "User Research", "Media Studies"],
+    skills: ["Strategic Communications", "Rhetorical Analysis", "Media Studies", "Research Methods"],
     type: "education"
   }
 ];

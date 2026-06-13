@@ -64,6 +64,7 @@ export const WORK_DATA: WorkPiece[] = [
     subtitle: "Challenge: Low awareness of information-design barriers affecting students with visual and physical needs at UIC.",
     description: "Built the full PR strategy for 'Avenues of Access' — crafting the narrative, writing distribution-ready press assets, and coordinating outreach that mobilized 5 campus organizations and redesigned student senate communications.",
     outcome: "5 organizations activated · Digital assets redesigned · Campus-wide narrative shift",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=800&q=80",
     url: "https://agosw2.myportfolio.com/press-release",
     category: "pr",
     skillsUsed: ["Stakeholder Alignment", "Narrative Strategy", "AP Style", "Campaign Design"],
@@ -96,6 +97,7 @@ Aahana Goswami is a senior B.A. Communication scholar with an English Minor at t
     subtitle: "Challenge: Blackmagic markets DaVinci Resolve as beginner-friendly, but new users can't complete basic tasks.",
     description: "Ran a full heuristic evaluation across the entire user journey — install, onboarding, editing, and export — systematically documenting where the product breaks its own promise. Identified a hidden 10GB export limit, chronic crash loops, and missing onboarding that blocks adoption.",
     outcome: "3 critical failures documented · Full journey mapped · Actionable redesign recommendations",
+    image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&q=80",
     url: "https://agosw2.myportfolio.com/usability-memo",
     category: "research",
     skillsUsed: ["Heuristic Evaluation", "Problem Decomposition", "Technical Writing", "UX Research"],
@@ -174,6 +176,7 @@ In total, there are **three major issues** that severely impact the relationship
     subtitle: "Challenge: Brands invest in social advocacy campaigns but can't tell if Gen Z sees through it.",
     description: "Surveyed 100 students and analyzed rhetoric patterns across TikTok and Instagram to map how Gen Z distinguishes authentic brand advocacy from performative messaging. Found that advocacy-led brands show 40% higher retention — but only when commitments are specific, not aesthetic.",
     outcome: "100-student survey · 40% retention insight · Strategic framework for brand trust",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
     url: "https://agosw2.myportfolio.com/journalistic-pieces",
     category: "journalism",
     skillsUsed: ["Primary Research", "Consumer Analysis", "Strategic Framing", "Data Synthesis"],
@@ -205,21 +208,16 @@ As writing consultants and communication specialists, we find that storytelling 
 > "Storytelling is not about decorating a product with words; it's about articulating the human necessity underneath." — A. Goswami`
   },
   {
-    id: "published-pieces",
-    title: "Published 6 Bylined Articles on Global Policy",
-    subtitle: "Challenge: Complex humanitarian crises need clear, compelling narratives that drive reader action.",
-    description: "Researched and wrote under editorial deadlines for The Borgen Project and UIC Bonfire — covering child marriage in Palestine, India's COVID crisis, Colombia's tax protests, South Africa's food insecurity, Spain's consent legislation, and U.S. college affordability. Each piece distilled complex policy into accessible, evidence-backed storytelling.",
-    outcome: "6 published bylines · 2 publications · Policy-to-narrative translation",
-    url: "https://agosw2.myportfolio.com/published-pieces",
-    category: "all",
-    skillsUsed: ["Deadline Writing", "Policy Analysis", "Persuasive Storytelling", "Research Synthesis"],
-    fullContent: `# PUBLISHED ARTICLES BY AAHANA GOSWAMI
-
-*Bylined features published in [The Borgen Project](https://borgenproject.org) and [UIC Bonfire](https://bonfire.digital.uic.edu) covering global humanitarian crises, policy reform, and student advocacy.*
-
----
-
-## 1. The Fight Against Child Marriage in Palestine
+    id: "article-palestine",
+    title: "The Fight Against Child Marriage in Palestine",
+    subtitle: "The Borgen Project · July 2021",
+    description: "Investigated how gender discrimination and poverty fuel child marriage in the Gaza Strip — and the grassroots men's movement that has prevented 50+ forced marriages.",
+    outcome: "Published byline · 65% violence statistic surfaced · 50 marriages prevented",
+    image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/Child-Marriage-in-Palestine-1030x773.jpg?lossy=1&strip=1&avif=1",
+    url: "https://borgenproject.org/child-marriage-in-palestine/",
+    category: "journalism",
+    skillsUsed: ["Policy Research", "Humanitarian Reporting", "Persuasive Storytelling"],
+    fullContent: `# The Fight Against Child Marriage in Palestine
 *The Borgen Project · July 7, 2021*
 
 In 2014, the State of Palestine ratified the Convention on the Elimination of All Forms of Discrimination Against Women and the Convention on the Rights of the Child. These treaties aim to protect children from child marriage in Palestine. However, child marriage is still a threat to children due to gender discrimination and economic struggle.
@@ -228,22 +226,38 @@ In 2014, the State of Palestine ratified the Convention on the Elimination of Al
 Gender discrimination is among the causes of child marriage in Palestine. Children living in the Gaza Strip and West Bank, especially girls and women, suffer gender-based violence throughout their communities and even in their families. In 2015, the Women's Affairs Center (WAC) reported that **"65% of women married before 18 experienced at least one act of violence in the Gaza Strip."** Political instability has led to widespread poverty with more than half of families living below the poverty line.
 
 ### The Men Who Stand Against It
-Freeh Abu T'ema is one of the first 20 ambassadors of change working to persuade their community to stop early marriages. These men had undergone training from the Future Brilliant Society as part of the U.N. Women's Regional Men and Women Gender Equality Programme. The group expanded to more than 30 men and prevented **50 marriages and counting.**
-
----
-
-## 2. Vax India Now: Fighting Against the COVID-19 Crisis in India
+Freeh Abu T'ema is one of the first 20 ambassadors of change working to persuade their community to stop early marriages. These men had undergone training from the Future Brilliant Society as part of the U.N. Women's Regional Men and Women Gender Equality Programme. The group expanded to more than 30 men and prevented **50 marriages and counting.**`
+  },
+  {
+    id: "article-india",
+    title: "Vax India Now: Fighting the COVID-19 Crisis in India",
+    subtitle: "The Borgen Project · July 2021",
+    description: "Covered how Indian American communities organized a star-studded virtual fundraiser to address India's devastating COVID surge — 500K+ daily cases, 4.3% vaccinated.",
+    outcome: "Published byline · Crisis awareness · Celebrity-driven advocacy spotlight",
+    image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/Celebrities-Fight-Against-the-COVID-19-Crisis-in-India.jpg?lossy=1&strip=1&avif=1",
+    url: "https://borgenproject.org/covid-19-crisis-in-india/",
+    category: "journalism",
+    skillsUsed: ["Deadline Journalism", "Crisis Reporting", "Research Synthesis"],
+    fullContent: `# Vax India Now: Fighting Against the COVID-19 Crisis in India
 *The Borgen Project · July 12, 2021*
 
 During April 2021, COVID-19 cases and deaths started to rise exponentially in India — more than 500,000 cases and 300,000 deaths. Hospitals were overwhelmed with a lack of supplies, space and staff, and only about 4.3% of India was vaccinated.
 
 A new variant called B.1.617, also known as "the double mutant," targets everyone, including the younger population. Facing panic in the country, Indian American actor **Anuradha Palakurthi** decided to bring people together through the power of music and donations.
 
-Vax India Now hosted a virtual event on July 7, 2021 featuring Gloria Estefan, Alan Walker, Josh Groban, Anil Kapoor, Hasan Minhaj and more — shedding a spotlight on the crisis and informing viewers on how they can help save lives.
-
----
-
-## 3. Colombia's New Tax Plan Sparks Protests
+Vax India Now hosted a virtual event on July 7, 2021 featuring Gloria Estefan, Alan Walker, Josh Groban, Anil Kapoor, Hasan Minhaj and more — shedding a spotlight on the crisis and informing viewers on how they can help save lives.`
+  },
+  {
+    id: "article-colombia",
+    title: "Colombia's New Tax Plan Sparks Protests",
+    subtitle: "The Borgen Project · September 2021",
+    description: "Analyzed how a $4 billion tax reform pushed 3 million more Colombians into poverty and triggered nationwide protests — examining the policy, the opposition, and the human cost.",
+    outcome: "Published byline · $4B policy analyzed · 3M poverty impact surfaced",
+    image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/Colombia-Tax-Plan-1030x859.jpg?lossy=1&strip=1&avif=1",
+    url: "https://borgenproject.org/colombias-new-tax-plan/",
+    category: "journalism",
+    skillsUsed: ["Policy Analysis", "Economic Research", "Narrative Framing"],
+    fullContent: `# Colombia's New Tax Plan Sparks Protests
 *The Borgen Project · September 27, 2021*
 
 On July 6, 2021, Colombia's Independence Day, President Ivan Duque presented a new $4 billion tax plan aimed at helping pay for social programs and pandemic-related expenses. Thousands marched through Colombia's main cities in protest.
@@ -252,31 +266,55 @@ The new reform places a higher tax burden on company earnings, discarding the pr
 
 > Duque told legislators the "social investment law, which we will build between all of us, is the largest jump in human development in recent decades."
 
-Francisco Maltes, president of the Central Union of Workers, leads demonstrations and plans to present congress with 10 proposals on addressing Colombia's social and economic crisis.
-
----
-
-## 4. Riots in South Africa Increase Food Insecurity
+Francisco Maltes, president of the Central Union of Workers, leads demonstrations and plans to present congress with 10 proposals on addressing Colombia's social and economic crisis.`
+  },
+  {
+    id: "article-south-africa",
+    title: "Riots in South Africa Increase Food Insecurity",
+    subtitle: "The Borgen Project · July 2021",
+    description: "Reported on how political unrest following Zuma's imprisonment ransacked 200+ malls and deepened food scarcity — requiring 25,000 troops to restore order.",
+    outcome: "Published byline · 200+ malls ransacked · 25K troops deployed",
+    image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/riots-in-South-Africa-1-300x160.jpg?lossy=1&strip=1&avif=1",
+    url: "https://borgenproject.org/riots-in-south-africa/",
+    category: "journalism",
+    skillsUsed: ["Crisis Analysis", "Data-Driven Reporting", "Geopolitical Research"],
+    fullContent: `# Riots in South Africa Increase Food Insecurity
 *The Borgen Project · July 30, 2021*
 
 When former president Jacob Zuma started serving a 15-month sentence for contempt of court, supporters in his home province of KwaZulu-Natal erupted. Rioters blocked major highways and burned about 20 trucks, resulting in the closing of two major roads linking Indian Ocean ports to the industrial hub of Johannesburg.
 
-Looters ransacked more than **200 shopping malls.** For people living in poverty in Durban and surrounding towns, food was always scarce — but now even more so. Professor Mcebisi Ndletyana noted that communities have left people in poverty to fend for themselves in a system that keeps them in poverty, causing them to start lashing out. **25,000 army troops** were eventually deployed to end the violence.
-
----
-
-## 5. New Efforts in Fighting Sexual Violence in Spain
+Looters ransacked more than **200 shopping malls.** For people living in poverty in Durban and surrounding towns, food was always scarce — but now even more so. Professor Mcebisi Ndletyana noted that communities have left people in poverty to fend for themselves in a system that keeps them in poverty, causing them to start lashing out. **25,000 army troops** were eventually deployed to end the violence.`
+  },
+  {
+    id: "article-spain",
+    title: "New Efforts in Fighting Sexual Violence in Spain",
+    subtitle: "The Borgen Project · July 2021",
+    description: "Covered Spain's landmark 'yes means yes' consent bill — tracing the 5-year legislative fight from the wolfpack case to a law redefining rape with sentences up to 15 years.",
+    outcome: "Published byline · Landmark legislation covered · Consent framework analyzed",
+    image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/SEXUAL-VIOLENCE-IN-SPAIN-e1628679771232.jpg?lossy=1&strip=1&avif=1",
+    url: "https://borgenproject.org/sexual-violence-in-spain/",
+    category: "journalism",
+    skillsUsed: ["Legislative Analysis", "Human Rights Reporting", "Persuasive Writing"],
+    fullContent: `# New Efforts in Fighting Sexual Violence in Spain
 *The Borgen Project · July 1, 2021*
 
 After five years of pushback, in May 2021 Spain finally approved a bill defining all non-consensual sexual acts as rape. The legislation came after the notorious "wolfpack" case, when five men gang-raped a woman and were initially charged with sexual abuse — not rape — because Spanish law required evidence of physical violence or intimidation.
 
 The bill is based on the **"yes means yes"** model of sexual consent. Under the new legislation, stalking, street harassment and genital mutilation also become crimes, with gang rape carrying prison sentences as high as **15 years.**
 
-> Maria Jesus Montero, spokesperson for the Spanish government, stated that the new law places "the victim at the center of the public response." Most importantly, she stressed that **passivity and silence do not equal consent.**
-
----
-
-## 6. The Price of Success: Is Paying College Tuition Worth It?
+> Maria Jesus Montero, spokesperson for the Spanish government, stated that the new law places "the victim at the center of the public response." Most importantly, she stressed that **passivity and silence do not equal consent.**`
+  },
+  {
+    id: "article-tuition",
+    title: "The Price of Success: Is Paying College Tuition Worth It?",
+    subtitle: "UIC Bonfire · November 2024 · Co-authored with Gaby Perez",
+    description: "Investigated how 70% of UIC students struggle with tuition costs, with 65% skipping textbooks and 20% failing courses as a result — proposing MAP grant expansion as a solution.",
+    outcome: "Published byline · 70% student struggle documented · Policy solution proposed",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=800&q=80",
+    url: "https://bonfire.digital.uic.edu/opinion/the-price-of-success-is-paying-college-tuition-worth-it/",
+    category: "journalism",
+    skillsUsed: ["Investigative Reporting", "Student Advocacy", "Data Analysis"],
+    fullContent: `# The Price of Success: Is Paying College Tuition Worth It?
 *UIC Bonfire · November 5, 2024 · Co-authored with Gaby Perez*
 
 Around **65 percent** of college students have skipped buying textbooks due to expense, with approximately 20 percent subsequently failing courses. At UIC specifically, **70% of students** struggle with tuition and other costs, describing it as a constant stressor. 81 percent of UIC students work between 4 and 35 hours weekly, leaving inadequate time for academics or wellbeing.
@@ -293,6 +331,7 @@ The authors conclude by urging student participation in electoral processes as t
     subtitle: "3.8 GPA · Writing Center · Graaphene · Dean's List · Pitch Competition Winner",
     description: "Communication scholar with an English minor, startup operations experience, competitive writing awards, and a track record of turning ambiguity into structured outcomes — from coaching writers to building marketplace playbooks.",
     outcome: "3.8 GPA · Multiple awards · 2 professional roles · Startup to campus impact",
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
     url: "https://agosw2.myportfolio.com/resume",
     category: "all",
     skillsUsed: ["Strategic Communication", "Operations Design", "Leadership", "AI Tools"],
@@ -330,6 +369,7 @@ Diligent, strategic, and creative senior Communication scholar and English Minor
     subtitle: "Additional writing samples, creative campaigns, and project archives.",
     description: "A curated collection of work spanning PR, content strategy, research, and creative storytelling — built to demonstrate range, rigor, and the ability to deliver across formats and audiences.",
     outcome: "Full archive · Multiple formats · End-to-end project ownership",
+    image: "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&q=80",
     url: "https://agosw2.myportfolio.com/about-2",
     category: "all",
     skillsUsed: ["Creative Direction", "Information Architecture", "Cross-Format Writing"],

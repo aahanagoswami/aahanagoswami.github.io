@@ -17,6 +17,7 @@ export interface WorkPiece {
   url: string;
   category: "pr" | "research" | "journalism" | "all";
   duration?: string;
+  image?: string;
   skillsUsed: string[];
   fullContent?: string;
 }

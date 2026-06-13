@@ -424,97 +424,63 @@ export default function App() {
             </div>
           </div>
 
-          {/* Hero feature card — first item gets large editorial layout */}
+          {/* Apple Discover-style editorial layout */}
           {!selectedWork && filteredWork.length > 0 && (
-            <button
-              onClick={() => setSelectedWork(filteredWork[0])}
-              className="w-full text-left mb-4 rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.005]"
-              style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="p-8 md:p-10 flex flex-col justify-between">
-                  <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full inline-block mb-4" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                      {filteredWork[0].category === "pr" ? "Strategy & PR" : filteredWork[0].category === "research" ? "Product Analysis" : filteredWork[0].category === "journalism" ? "Research & Insight" : "Featured"}
-                    </span>
-                    <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-3" style={{ color: "var(--ink)" }}>
-                      {filteredWork[0].title}
-                    </h3>
-                    <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
-                      {filteredWork[0].description}
-                    </p>
+            <div className="space-y-4">
+              {/* Hero card — full width with large cover image */}
+              <button
+                onClick={() => setSelectedWork(filteredWork[0])}
+                className="w-full text-left rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.003]"
+                style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
+              >
+                {filteredWork[0].image && (
+                  <div className="w-full h-[280px] md:h-[340px] overflow-hidden">
+                    <img src={filteredWork[0].image} alt={filteredWork[0].title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>
-                  <div className="flex items-start gap-2 py-2.5 px-3 rounded-lg" style={{ background: "var(--tag-bg)" }}>
-                    <CheckCircle2 className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: "var(--blue)" }} />
-                    <p className="text-xs font-semibold" style={{ color: "var(--blue)" }}>
-                      {filteredWork[0].outcome}
-                    </p>
-                  </div>
+                )}
+                <div className="p-6 md:p-8">
+                  <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full inline-block mb-3" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                    {filteredWork[0].category === "pr" ? "Strategy & PR" : filteredWork[0].category === "research" ? "Product Analysis" : filteredWork[0].category === "journalism" ? "Research & Insight" : "Featured"}
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-2" style={{ color: "var(--ink)" }}>
+                    {filteredWork[0].title}
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+                    {filteredWork[0].description}
+                  </p>
                 </div>
-                <div className="hidden md:flex items-center justify-center p-8" style={{ background: "var(--tag-bg)" }}>
-                  <div className="text-center">
-                    <BookOpen className="w-12 h-12 mx-auto mb-3 opacity-30" style={{ color: "var(--ink)" }} />
-                    <div className="flex flex-wrap gap-1.5 justify-center">
-                      {filteredWork[0].skillsUsed.map((skill, sIdx) => (
-                        <span key={sIdx} className="text-[10px] font-semibold py-1 px-2.5 rounded-md" style={{ background: "var(--card)", color: "var(--ink-soft)" }}>
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                    <p className="text-xs mt-4 font-medium" style={{ color: "var(--ink-soft)" }}>Click to read full case study</p>
-                  </div>
-                </div>
-              </div>
-            </button>
-          )}
+              </button>
 
-          {/* Remaining cards in 2-column grid */}
-          {!selectedWork && (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" id="work-grid-pieces">
-              {filteredWork.slice(1).map((sample, idx) => (
-                <button
-                  key={sample.id}
-                  onClick={() => setSelectedWork(sample)}
-                  className="apple-card p-7 flex flex-col justify-between group relative overflow-hidden text-left cursor-pointer w-full focus:outline-none"
-                  style={{ animationDelay: `${idx * 0.05}s` }}
-                  id={`work-item-${sample.id}`}
-                >
-                  <div className="w-full">
-                    <div className="flex justify-between items-start gap-4 mb-3">
-                      <div>
-                        <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full mb-3 inline-block" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+              {/* Two-column row with image + text side by side (like Apple Discover bottom row) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {filteredWork.slice(1).map((sample) => (
+                  <button
+                    key={sample.id}
+                    onClick={() => setSelectedWork(sample)}
+                    className="w-full text-left rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.003]"
+                    style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
+                  >
+                    <div className="flex items-center gap-0">
+                      <div className="flex-1 p-5 md:p-6">
+                        <span className="text-[10px] font-semibold uppercase tracking-wider py-0.5 px-2 rounded-full inline-block mb-2" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
                           {sample.category === "pr" ? "Strategy & PR" : sample.category === "research" ? "Product Analysis" : sample.category === "journalism" ? "Research & Insight" : "Featured"}
                         </span>
-                        <h3 className="text-lg font-bold transition-colors" style={{ color: "var(--ink)" }}>
+                        <h3 className="text-base md:text-lg font-bold leading-snug mb-2" style={{ color: "var(--ink)" }}>
                           {sample.title}
                         </h3>
+                        <p className="text-xs leading-relaxed line-clamp-3" style={{ color: "var(--ink-soft)" }}>
+                          {sample.description}
+                        </p>
                       </div>
-                      <span className="p-2.5 rounded-full transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                        <BookOpen className="w-4 h-4" />
-                      </span>
+                      {sample.image && (
+                        <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] rounded-2xl overflow-hidden shrink-0 mr-5">
+                          <img src={sample.image} alt={sample.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        </div>
+                      )}
                     </div>
-
-                    <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--ink-soft)" }}>
-                      {sample.description}
-                    </p>
-
-                    <div className="flex items-start gap-2 mb-5 py-2 px-3 rounded-lg" style={{ background: "var(--tag-bg)" }}>
-                      <CheckCircle2 className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: "var(--blue)" }} />
-                      <p className="text-xs font-semibold" style={{ color: "var(--blue)" }}>
-                        {sample.outcome}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-1.5 pt-3 w-full" style={{ borderTop: "1px solid var(--hair-soft)" }}>
-                    {sample.skillsUsed.map((skill, sIdx) => (
-                      <span key={sIdx} className="text-[10px] font-semibold py-1 px-2.5 rounded-md" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)" }}>
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </button>
-              ))}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 

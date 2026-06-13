@@ -218,7 +218,7 @@ export default function App() {
 
             <div>
               <div className="hero-kicker">
-                Communications · Marketing · PR · Consulting
+                Storyteller, Content & Media, Communications, Marketing, PR, Consulting
               </div>
               <h1 className="hero-title">
                 Aahana Goswami.<br />
@@ -261,7 +261,7 @@ export default function App() {
           <div className="max-w-3xl">
             <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--ink-soft)" }}>Core Statement</h3>
             <p className="about-statement" style={{ color: "var(--ink)" }}>
-              I do my clearest thinking when things are ambiguous — breaking down complex problems, aligning stakeholders with competing priorities, and building narratives that drive action. As a founding member of <span style={{ color: "var(--blue)" }}>Graaphene</span>, an AI-powered care marketplace, I designed operations and engagement systems from the ground up — learning that the hardest problems aren't technical, they're human. At UIC, I sharpened that instinct across <span style={{ color: "var(--blue)" }}>strategic communication, rhetoric, and consumer behavior</span>, earning highest honors while consulting with writers to restructure complex arguments, leading accessibility advocacy across campus organizations, and showing up through personal adversity with the kind of <span style={{ color: "var(--blue)" }}>resilience, judgment, and grace under pressure</span> that no transcript captures. I work fluently with <span style={{ color: "var(--blue)" }}>Claude, Gemini, ChatGPT, and Canva AI</span> — not as shortcuts, but as force multipliers for research, analysis, and content strategy. What drives me is the intersection of <span style={{ color: "var(--blue)" }}>analytical rigor and creative storytelling</span> — and I'm looking to bring that to strategy and consulting.
+              I do my clearest thinking when things are ambiguous — breaking down complex problems, aligning stakeholders with competing priorities, and building narratives that drive action. As a founding member of Graaphene, an AI-powered care marketplace, I designed operations and engagement systems from the ground up — learning that the hardest problems aren't technical, they're human. At UIC, I sharpened that instinct across <span style={{ color: "var(--blue)" }}>strategic communication, rhetoric, and consumer behavior</span>, earning highest honors while consulting with writers to restructure complex arguments, leading accessibility advocacy across campus organizations, and showing up through personal adversity with the kind of <span style={{ color: "var(--blue)" }}>resilience, judgment, and grace under pressure</span> that no transcript captures. I work fluently with <span style={{ color: "var(--blue)" }}>Claude, Gemini, ChatGPT, and Canva AI</span> — not as shortcuts, but as force multipliers for research, analysis, and content strategy. What drives me is the intersection of <span style={{ color: "var(--blue)" }}>analytical rigor and creative storytelling</span> — and I'm looking to bring that to strategy and consulting.
             </p>
           </div>
         </div>
@@ -395,20 +395,20 @@ export default function App() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-[34px]">
             <div className="max-w-[46rem]">
               <h2 className="section-title mb-3" style={{ color: "var(--ink)" }}>
-                Selected work. <span style={{ color: "var(--ink-soft)" }}>Writing samples and case pieces.</span>
+                Selected work. <span style={{ color: "var(--ink-soft)" }}>Real problems, real outcomes.</span>
               </h2>
               <p className="mt-3 text-[17px]" style={{ color: "var(--ink-soft)" }}>
-                Drafted and validated across multiple disciplines — click any card to read the full writing piece instantly inline.
+                Each piece solved a real problem — click any card to read the full case study.
               </p>
             </div>
 
             {/* Interactive Category Select Grid list */}
             <div className="flex flex-wrap gap-2 mt-6 lg:mt-0 p-1.5 rounded-full" style={{ background: "var(--tag-bg)", border: "1px solid var(--hair-soft)" }}>
               {[
-                { key: "all", label: "All Samples" },
-                { key: "pr", label: "Public Relations" },
-                { key: "research", label: "UX & Usability" },
-                { key: "journalism", label: "Longform Analytical" }
+                { key: "all", label: "All Work" },
+                { key: "pr", label: "Strategy & PR" },
+                { key: "research", label: "Product Analysis" },
+                { key: "journalism", label: "Research & Insight" }
               ].map((category) => (
                 <button
                   key={category.key}
@@ -438,23 +438,30 @@ export default function App() {
                   <div className="flex justify-between items-start gap-4 mb-4">
                     <div>
                       <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full mb-3 inline-block" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                        {sample.category === "pr" ? "Public Relations" : sample.category === "research" ? "Usability Memo" : sample.category === "journalism" ? "Journalistic" : "Bylines & Portfolios"}
+                        {sample.category === "pr" ? "Strategy & PR" : sample.category === "research" ? "Product Analysis" : sample.category === "journalism" ? "Research & Insight" : "Featured"}
                       </span>
                       <h3 className="text-xl font-bold transition-colors" style={{ color: "var(--ink)" }}>
                         {sample.title}
                       </h3>
-                      <p className="text-xs font-medium mt-1" style={{ color: "var(--ink-soft)" }}>
+                      <p className="text-xs font-medium mt-2 leading-relaxed" style={{ color: "var(--ink-soft)" }}>
                         {sample.subtitle}
                       </p>
                     </div>
-                    <span className="p-2.5 rounded-full transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                    <span className="p-2.5 rounded-full transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
                       <BookOpen className="w-4 h-4" />
                     </span>
                   </div>
 
-                  <p className="text-sm leading-relaxed mb-6" style={{ color: "var(--ink-soft)" }}>
+                  <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
                     {sample.description}
                   </p>
+
+                  <div className="flex items-start gap-2 mb-6 py-2.5 px-3 rounded-lg" style={{ background: "var(--tag-bg)" }}>
+                    <CheckCircle2 className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: "var(--blue)" }} />
+                    <p className="text-xs font-semibold" style={{ color: "var(--blue)" }}>
+                      {sample.outcome}
+                    </p>
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap gap-1.5 pt-4 w-full" style={{ borderTop: "1px solid var(--hair-soft)" }}>

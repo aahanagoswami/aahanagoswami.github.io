@@ -13,6 +13,7 @@ export interface WorkPiece {
   title: string;
   subtitle: string;
   description: string;
+  outcome: string;
   url: string;
   category: "pr" | "research" | "journalism" | "all";
   duration?: string;

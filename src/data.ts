@@ -60,12 +60,13 @@ export const STRENGTHS_DATA: Strength[] = [
 export const WORK_DATA: WorkPiece[] = [
   {
     id: "press-release",
-    title: "Press Release",
-    subtitle: "Public relations writing",
-    description: "A professional, distribution-ready press release structured for media pickup, featuring impactful headlines and a strong narrative.",
+    title: "Launched a Campus Accessibility Campaign",
+    subtitle: "Challenge: Low awareness of information-design barriers affecting students with visual and physical needs at UIC.",
+    description: "Built the full PR strategy for 'Avenues of Access' — crafting the narrative, writing distribution-ready press assets, and coordinating outreach that mobilized 5 campus organizations and redesigned student senate communications.",
+    outcome: "5 organizations activated · Digital assets redesigned · Campus-wide narrative shift",
     url: "https://agosw2.myportfolio.com/press-release",
     category: "pr",
-    skillsUsed: ["Media Pitching", "AP Style", "Corporate Comms"],
+    skillsUsed: ["Stakeholder Alignment", "Narrative Strategy", "AP Style", "Campaign Design"],
     fullContent: `### FOR IMMEDIATE RELEASE
 
 ## NEW CAMPUS INITIATIVE DEBUTS: UNIVERSITY OF ILLINOIS CHICAGO EXPANDS STUDENT ACCESSIBILITY WORKFLOWS
@@ -91,12 +92,13 @@ Aahana Goswami is a senior B.A. Communication scholar with an English Minor at t
   },
   {
     id: "usability-memo",
-    title: "Usability Memo",
-    subtitle: "DaVinci Resolve — Product usability evaluation",
-    description: "A hands-on usability evaluation of DaVinci Resolve's free video editing software, identifying critical UX friction points, rendering issues, and beginner accessibility gaps.",
+    title: "Uncovered 3 Critical UX Failures in DaVinci Resolve",
+    subtitle: "Challenge: Blackmagic markets DaVinci Resolve as beginner-friendly, but new users can't complete basic tasks.",
+    description: "Ran a full heuristic evaluation across the entire user journey — install, onboarding, editing, and export — systematically documenting where the product breaks its own promise. Identified a hidden 10GB export limit, chronic crash loops, and missing onboarding that blocks adoption.",
+    outcome: "3 critical failures documented · Full journey mapped · Actionable redesign recommendations",
     url: "https://agosw2.myportfolio.com/usability-memo",
     category: "research",
-    skillsUsed: ["UX Research", "Heuristic Evaluation", "Technical Writing", "Product Analysis"],
+    skillsUsed: ["Heuristic Evaluation", "Problem Decomposition", "Technical Writing", "UX Research"],
     fullContent: `# USABILITY MEMO
 
 **FROM:** Aahana Goswami
@@ -168,12 +170,13 @@ In total, there are **three major issues** that severely impact the relationship
   },
   {
     id: "journalistic-piece",
-    title: "Mini White Paper",
-    subtitle: "Analytical long-form writing",
-    description: "A deeply-researched investigative white paper exploring societal behavior, accessibility issues, and digital media trends.",
+    title: "Decoded How Gen Z Evaluates Brand Authenticity",
+    subtitle: "Challenge: Brands invest in social advocacy campaigns but can't tell if Gen Z sees through it.",
+    description: "Surveyed 100 students and analyzed rhetoric patterns across TikTok and Instagram to map how Gen Z distinguishes authentic brand advocacy from performative messaging. Found that advocacy-led brands show 40% higher retention — but only when commitments are specific, not aesthetic.",
+    outcome: "100-student survey · 40% retention insight · Strategic framework for brand trust",
     url: "https://agosw2.myportfolio.com/journalistic-pieces",
     category: "journalism",
-    skillsUsed: ["Primary Research", "Policy Analysis", "Structural Editing"],
+    skillsUsed: ["Primary Research", "Consumer Analysis", "Strategic Framing", "Data Synthesis"],
     fullContent: `# THE DIGITAL LANDSCAPE: RHETORIC, CREATIVE STORYTELLING, AND MODERN CONSUMER CULTURE
 
 *An Investigative Study on Gen Z Consumer Behavior, Social Narratives, and Brand Trust.*
@@ -203,12 +206,13 @@ As writing consultants and communication specialists, we find that storytelling 
   },
   {
     id: "published-pieces",
-    title: "Published Pieces",
-    subtitle: "Bylined articles — The Borgen Project & UIC Bonfire",
-    description: "Six published articles covering global humanitarian issues, policy analysis, and student advocacy — bylined in The Borgen Project and UIC's Bonfire digital publication.",
+    title: "Published 6 Bylined Articles on Global Policy",
+    subtitle: "Challenge: Complex humanitarian crises need clear, compelling narratives that drive reader action.",
+    description: "Researched and wrote under editorial deadlines for The Borgen Project and UIC Bonfire — covering child marriage in Palestine, India's COVID crisis, Colombia's tax protests, South Africa's food insecurity, Spain's consent legislation, and U.S. college affordability. Each piece distilled complex policy into accessible, evidence-backed storytelling.",
+    outcome: "6 published bylines · 2 publications · Policy-to-narrative translation",
     url: "https://agosw2.myportfolio.com/published-pieces",
     category: "all",
-    skillsUsed: ["Feature Writing", "Policy Analysis", "Deadline Journalism", "Primary Research"],
+    skillsUsed: ["Deadline Writing", "Policy Analysis", "Persuasive Storytelling", "Research Synthesis"],
     fullContent: `# PUBLISHED ARTICLES BY AAHANA GOSWAMI
 
 *Bylined features published in [The Borgen Project](https://borgenproject.org) and [UIC Bonfire](https://bonfire.digital.uic.edu) covering global humanitarian crises, policy reform, and student advocacy.*
@@ -285,12 +289,13 @@ The authors conclude by urging student participation in electoral processes as t
   },
   {
     id: "resume",
-    title: "Résumé",
-    subtitle: "Full background & skills",
-    description: "Detailed professional experience, certifications, leadership roles, and academic achievements at UIC.",
+    title: "Full Résumé — Experience, Skills & Honors",
+    subtitle: "3.8 GPA · Writing Center · Graaphene · Dean's List · Pitch Competition Winner",
+    description: "Communication scholar with an English minor, startup operations experience, competitive writing awards, and a track record of turning ambiguity into structured outcomes — from coaching writers to building marketplace playbooks.",
+    outcome: "3.8 GPA · Multiple awards · 2 professional roles · Startup to campus impact",
     url: "https://agosw2.myportfolio.com/resume",
     category: "all",
-    skillsUsed: ["Strategic Comms", "Team Leadership", "Operations Management"],
+    skillsUsed: ["Strategic Communication", "Operations Design", "Leadership", "AI Tools"],
     fullContent: `# AAHANA GOSWAMI
 Chicago, IL · aasignshere@gmail.com · [LinkedIn Profile](https://www.linkedin.com/in/aahana-goswami)
 
@@ -321,12 +326,13 @@ Diligent, strategic, and creative senior Communication scholar and English Minor
   },
   {
     id: "full-portfolio",
-    title: "Full Portfolio",
-    subtitle: "agosw2.myportfolio.com",
-    description: "Access my complete interactive portfolio housing additional writing samples, projects, and creative campaigns.",
+    title: "Explore the Complete Portfolio",
+    subtitle: "Additional writing samples, creative campaigns, and project archives.",
+    description: "A curated collection of work spanning PR, content strategy, research, and creative storytelling — built to demonstrate range, rigor, and the ability to deliver across formats and audiences.",
+    outcome: "Full archive · Multiple formats · End-to-end project ownership",
     url: "https://agosw2.myportfolio.com/about-2",
     category: "all",
-    skillsUsed: ["Creative Direction", "Information Architecture", "UX Copywriting"],
+    skillsUsed: ["Creative Direction", "Information Architecture", "Cross-Format Writing"],
     fullContent: `# WELCOME TO THE INTEGRATED PORTFOLIO WORKSPACE OF AAHANA GOSWAMI
 
 My research and creative workflows center on one core mandate: **simplify communication and heighten connection.**

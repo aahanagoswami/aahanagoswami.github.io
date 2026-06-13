@@ -460,7 +460,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: "Summer Intern",
     company: "Future Founders",
     period: "May 2022 – Aug 2022",
-    logo: "/images/logos/futurefounders.png",
+    logo: "/images/logos/futurefounders.svg",
     description: [
       "Participated in an entrepreneurship-focused internship program, developing teamwork, creative writing, and business development skills in a startup ecosystem."
     ],

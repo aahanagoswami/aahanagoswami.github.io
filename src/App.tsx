@@ -350,13 +350,17 @@ export default function App() {
                 style={{ border: "1px solid var(--hair)", background: "var(--card)" }}
               >
                 <div className="flex gap-4 items-start">
-                  <div className="w-11 h-11 rounded-2xl shadow-sm overflow-hidden flex items-center justify-center shrink-0" style={{ background: "var(--bg)", border: "1px solid var(--hair)" }}>
+                  <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center shrink-0">
                     {exp.logo ? (
-                      <img src={exp.logo} alt={exp.company} className="w-7 h-7 object-contain" />
+                      <img src={exp.logo} alt={exp.company} className="w-full h-full object-contain" />
                     ) : exp.type === "work" || exp.type === "advocacy" ? (
-                      <Briefcase className="w-5 h-5" style={{ color: "var(--blue)" }} />
+                      <div className="w-full h-full rounded-xl flex items-center justify-center" style={{ background: "var(--tag-bg)" }}>
+                        <Briefcase className="w-5 h-5" style={{ color: "var(--blue)" }} />
+                      </div>
                     ) : (
-                      <GraduationCap className="w-5 h-5" style={{ color: "var(--indigo)" }} />
+                      <div className="w-full h-full rounded-xl flex items-center justify-center" style={{ background: "var(--tag-bg)" }}>
+                        <GraduationCap className="w-5 h-5" style={{ color: "var(--indigo)" }} />
+                      </div>
                     )}
                   </div>
                   <div>

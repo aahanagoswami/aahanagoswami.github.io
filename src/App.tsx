@@ -402,7 +402,6 @@ export default function App() {
               </p>
             </div>
 
-            {/* Interactive Category Select Grid list */}
             <div className="flex flex-wrap gap-2 mt-6 lg:mt-0 p-1.5 rounded-full" style={{ background: "var(--tag-bg)", border: "1px solid var(--hair-soft)" }}>
               {[
                 { key: "all", label: "All Work" },
@@ -412,7 +411,7 @@ export default function App() {
               ].map((category) => (
                 <button
                   key={category.key}
-                  onClick={() => setActiveCategory(category.key)}
+                  onClick={() => { setActiveCategory(category.key); setSelectedWork(null); }}
                   className="px-4 py-1.5 rounded-full text-xs font-medium transition-all"
                   style={activeCategory === category.key
                     ? { background: "var(--card)", color: "var(--ink)", fontWeight: 600, boxShadow: "0 1px 3px rgba(0,0,0,.08)" }
@@ -425,55 +424,189 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" id="work-grid-pieces">
-            {filteredWork.map((sample, idx) => (
-              <button 
-                key={sample.id}
-                onClick={() => setSelectedWork(sample)}
-                className="apple-card p-8 flex flex-col justify-between group relative overflow-hidden text-left cursor-pointer w-full focus:outline-none"
-                style={{ animationDelay: `${idx * 0.05}s` }}
-                id={`work-item-${sample.id}`}
-              >
-                <div className="w-full">
-                  <div className="flex justify-between items-start gap-4 mb-4">
-                    <div>
-                      <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full mb-3 inline-block" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                        {sample.category === "pr" ? "Strategy & PR" : sample.category === "research" ? "Product Analysis" : sample.category === "journalism" ? "Research & Insight" : "Featured"}
-                      </span>
-                      <h3 className="text-xl font-bold transition-colors" style={{ color: "var(--ink)" }}>
-                        {sample.title}
-                      </h3>
-                      <p className="text-xs font-medium mt-2 leading-relaxed" style={{ color: "var(--ink-soft)" }}>
-                        {sample.subtitle}
-                      </p>
-                    </div>
-                    <span className="p-2.5 rounded-full transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
-                      <BookOpen className="w-4 h-4" />
+          {/* Hero feature card — first item gets large editorial layout */}
+          {!selectedWork && filteredWork.length > 0 && (
+            <button
+              onClick={() => setSelectedWork(filteredWork[0])}
+              className="w-full text-left mb-4 rounded-[20px] overflow-hidden group cursor-pointer focus:outline-none transition-transform hover:scale-[1.005]"
+              style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="p-8 md:p-10 flex flex-col justify-between">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full inline-block mb-4" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                      {filteredWork[0].category === "pr" ? "Strategy & PR" : filteredWork[0].category === "research" ? "Product Analysis" : filteredWork[0].category === "journalism" ? "Research & Insight" : "Featured"}
                     </span>
+                    <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-3" style={{ color: "var(--ink)" }}>
+                      {filteredWork[0].title}
+                    </h3>
+                    <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
+                      {filteredWork[0].description}
+                    </p>
                   </div>
-
-                  <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
-                    {sample.description}
-                  </p>
-
-                  <div className="flex items-start gap-2 mb-6 py-2.5 px-3 rounded-lg" style={{ background: "var(--tag-bg)" }}>
+                  <div className="flex items-start gap-2 py-2.5 px-3 rounded-lg" style={{ background: "var(--tag-bg)" }}>
                     <CheckCircle2 className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: "var(--blue)" }} />
                     <p className="text-xs font-semibold" style={{ color: "var(--blue)" }}>
-                      {sample.outcome}
+                      {filteredWork[0].outcome}
                     </p>
                   </div>
                 </div>
-
-                <div className="flex flex-wrap gap-1.5 pt-4 w-full" style={{ borderTop: "1px solid var(--hair-soft)" }}>
-                  {sample.skillsUsed.map((skill, sIdx) => (
-                    <span key={sIdx} className="text-[10px] font-semibold py-1 px-2.5 rounded-md" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)" }}>
-                      {skill}
-                    </span>
-                  ))}
+                <div className="hidden md:flex items-center justify-center p-8" style={{ background: "var(--tag-bg)" }}>
+                  <div className="text-center">
+                    <BookOpen className="w-12 h-12 mx-auto mb-3 opacity-30" style={{ color: "var(--ink)" }} />
+                    <div className="flex flex-wrap gap-1.5 justify-center">
+                      {filteredWork[0].skillsUsed.map((skill, sIdx) => (
+                        <span key={sIdx} className="text-[10px] font-semibold py-1 px-2.5 rounded-md" style={{ background: "var(--card)", color: "var(--ink-soft)" }}>
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                    <p className="text-xs mt-4 font-medium" style={{ color: "var(--ink-soft)" }}>Click to read full case study</p>
+                  </div>
                 </div>
+              </div>
+            </button>
+          )}
+
+          {/* Remaining cards in 2-column grid */}
+          {!selectedWork && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4" id="work-grid-pieces">
+              {filteredWork.slice(1).map((sample, idx) => (
+                <button
+                  key={sample.id}
+                  onClick={() => setSelectedWork(sample)}
+                  className="apple-card p-7 flex flex-col justify-between group relative overflow-hidden text-left cursor-pointer w-full focus:outline-none"
+                  style={{ animationDelay: `${idx * 0.05}s` }}
+                  id={`work-item-${sample.id}`}
+                >
+                  <div className="w-full">
+                    <div className="flex justify-between items-start gap-4 mb-3">
+                      <div>
+                        <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full mb-3 inline-block" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                          {sample.category === "pr" ? "Strategy & PR" : sample.category === "research" ? "Product Analysis" : sample.category === "journalism" ? "Research & Insight" : "Featured"}
+                        </span>
+                        <h3 className="text-lg font-bold transition-colors" style={{ color: "var(--ink)" }}>
+                          {sample.title}
+                        </h3>
+                      </div>
+                      <span className="p-2.5 rounded-full transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1 shrink-0" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                        <BookOpen className="w-4 h-4" />
+                      </span>
+                    </div>
+
+                    <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--ink-soft)" }}>
+                      {sample.description}
+                    </p>
+
+                    <div className="flex items-start gap-2 mb-5 py-2 px-3 rounded-lg" style={{ background: "var(--tag-bg)" }}>
+                      <CheckCircle2 className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: "var(--blue)" }} />
+                      <p className="text-xs font-semibold" style={{ color: "var(--blue)" }}>
+                        {sample.outcome}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-1.5 pt-3 w-full" style={{ borderTop: "1px solid var(--hair-soft)" }}>
+                    {sample.skillsUsed.map((skill, sIdx) => (
+                      <span key={sIdx} className="text-[10px] font-semibold py-1 px-2.5 rounded-md" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)" }}>
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* Inline expanded article view — replaces cards when a piece is selected */}
+          {selectedWork && (
+            <div className="animate-fade-in">
+              <button
+                onClick={() => setSelectedWork(null)}
+                className="flex items-center gap-2 mb-6 text-sm font-medium transition-colors cursor-pointer hover:opacity-70"
+                style={{ color: "var(--blue)" }}
+              >
+                <ChevronRight className="w-4 h-4 rotate-180" />
+                Back to all work
               </button>
-            ))}
-          </div>
+
+              <div className="rounded-[20px] overflow-hidden" style={{ background: "var(--card)", border: "1px solid var(--hair)" }}>
+                {/* Article header */}
+                <div className="p-8 md:p-12" style={{ borderBottom: "1px solid var(--hair)" }}>
+                  <span className="text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-full inline-block mb-4" style={{ color: "var(--blue)", background: "var(--tag-bg)" }}>
+                    {selectedWork.category === "pr" ? "Strategy & PR" : selectedWork.category === "research" ? "Product Analysis" : selectedWork.category === "journalism" ? "Research & Insight" : "Featured"}
+                  </span>
+                  <h1 className="text-2xl md:text-4xl font-bold tracking-tight mb-3" style={{ color: "var(--ink)" }}>
+                    {selectedWork.title}
+                  </h1>
+                  <p className="text-base md:text-lg mb-6" style={{ color: "var(--ink-soft)" }}>
+                    {selectedWork.subtitle}
+                  </p>
+
+                  <div className="flex items-start gap-2 py-3 px-4 rounded-xl mb-6 inline-flex" style={{ background: "var(--tag-bg)" }}>
+                    <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "var(--blue)" }} />
+                    <p className="text-sm font-semibold" style={{ color: "var(--blue)" }}>
+                      {selectedWork.outcome}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    {selectedWork.skillsUsed.map((skill, idx) => (
+                      <span key={idx} className="text-xs font-medium py-1.5 px-3 rounded-full" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)", border: "1px solid var(--hair-soft)" }}>
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Article body */}
+                <div className="p-8 md:px-12 md:py-10">
+                  <div className="max-w-3xl">
+                    <article className="prose max-w-none" style={{ color: "var(--ink)" }}>
+                      {selectedWork.fullContent ? (
+                        <MarkdownRenderer content={selectedWork.fullContent} />
+                      ) : (
+                        <p className="italic" style={{ color: "var(--ink-soft)" }}>Writing sample text coming soon...</p>
+                      )}
+                    </article>
+
+                    {selectedWork.id === "usability-memo" && (
+                      <div className="mt-8 pt-6" style={{ borderTop: "1px solid var(--hair)" }}>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--ink)" }}>Video Demo — Editing in DaVinci Resolve</h3>
+                        <video controls className="w-full rounded-xl shadow-lg" preload="metadata">
+                          <source src="/videos/davinci-resolve-demo.mp4" type="video/mp4" />
+                        </video>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* Article footer */}
+                <div className="px-8 md:px-12 py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" style={{ borderTop: "1px solid var(--hair)" }}>
+                  <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
+                    Interested in this work? Let's connect.
+                  </p>
+                  <div className="flex gap-3">
+                    <a
+                      href="#connect"
+                      onClick={() => setSelectedWork(null)}
+                      className="px-4 py-2 text-xs font-medium rounded-full transition-colors inline-flex items-center gap-1.5"
+                      style={{ background: "var(--ink)", color: "var(--bg)" }}
+                    >
+                      <MessageSquare className="w-3.5 h-3.5" /> Leave a Note
+                    </a>
+                    <button
+                      onClick={() => setSelectedWork(null)}
+                      className="px-4 py-2 text-xs font-medium rounded-full transition-colors cursor-pointer"
+                      style={{ border: "1px solid var(--hair)", color: "var(--ink)" }}
+                    >
+                      Back to Work
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
         </div>
       </section>
@@ -684,119 +817,6 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Immersive Workpiece Modal Viewer */}
-      {selectedWork && (
-        <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-6"
-          id="workpiece-modal-overlay"
-        >
-          {/* Animated Backdrop */}
-          <div 
-            className="absolute inset-0 bg-[#1d1d1f]/40 backdrop-blur-md transition-opacity duration-300"
-            onClick={() => setSelectedWork(null)}
-          ></div>
-          
-          {/* Modal Container */}
-          <div 
-            className="relative bg-white w-full max-w-3xl max-h-[85vh] rounded-[24px] shadow-2xl border border-[#cbd5e1]/40 flex flex-col overflow-hidden animate-scale-up z-10 transition-all"
-            id="workpiece-modal-content"
-          >
-            {/* Modal Header */}
-            <header className="px-6 py-4 border-b border-[#cbd5e1]/30 flex items-center justify-between bg-slate-50 flex-shrink-0">
-              <div className="flex items-center gap-3">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#0a66c2] bg-[#0a66c2]/10 px-2.5 py-1 rounded-full">
-                  {selectedWork.category === "pr" ? "Public Relations" : selectedWork.category === "research" ? "Usability Memo" : selectedWork.category === "journalism" ? "Journalistic" : "Portfolio Collection"}
-                </span>
-                <span className="text-xs text-slate-400 font-mono hidden sm:inline">
-                  esc to close
-                </span>
-              </div>
-              <button 
-                onClick={() => setSelectedWork(null)}
-                className="p-1.5 rounded-full hover:bg-[#1d1d1f]/5 text-[#6e6e73] hover:text-[#1d1d1f] transition-all cursor-pointer"
-                aria-label="Close modal"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </header>
-
-            {/* Read Area */}
-            <div className="flex-1 overflow-y-auto px-6 py-8 md:px-10 md:py-12 scrollbar-thin">
-              <div className="max-w-2xl mx-auto">
-                <div className="mb-6">
-                  <h1 className="text-2xl md:text-3.5xl font-extrabold tracking-tight text-[#1d1d1f] mb-3 leading-snug font-sans">
-                    {selectedWork.title}
-                  </h1>
-                  <p className="text-base md:text-lg text-[#6e6e73] font-medium leading-relaxed">
-                    {selectedWork.subtitle}
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap gap-2 mb-8 pb-6 border-b border-slate-100">
-                  {selectedWork.skillsUsed.map((skill, idx) => (
-                    <span key={idx} className="text-xs font-medium bg-slate-100 text-[#1d1d1f] border border-[#cbd5e1]/40 py-1 px-3 rounded-full">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Main Text Content */}
-                <article className="prose max-w-none text-[#1d1d1f]">
-                  {selectedWork.fullContent ? (
-                    <MarkdownRenderer content={selectedWork.fullContent} />
-                  ) : (
-                    <p className="italic text-[#6e6e73]">Writing sample text coming soon...</p>
-                  )}
-                </article>
-
-                {selectedWork.id === "usability-memo" && (
-                  <div className="mt-8 pt-6 border-t border-slate-100">
-                    <h3 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--ink)" }}>Video Demo — Editing in DaVinci Resolve</h3>
-                    <video
-                      controls
-                      className="w-full rounded-xl shadow-lg"
-                      preload="metadata"
-                    >
-                      <source src="/videos/davinci-resolve-demo.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Modal Sticky Footer */}
-            <footer className="px-6 py-4 bg-slate-50 border-t border-[#cbd5e1]/30 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 flex-shrink-0">
-              <p className="text-xs text-[#6e6e73]">
-                Interested in this writing sample? Ask Aahana about it!
-              </p>
-              <div className="flex gap-3">
-                <a 
-                  href="#connect"
-                  onClick={() => {
-                    setSelectedWork(null);
-                    // allow smooth scroll to execute after modal unmount
-                    setTimeout(() => {
-                      const element = document.getElementById("connect");
-                      if (element) {
-                        element.scrollIntoView({ behavior: "smooth" });
-                      }
-                    }, 150);
-                  }}
-                  className="px-4 py-2 bg-[#1d1d1f] text-white hover:bg-[#323236] text-xs font-medium rounded-full transition-colors inline-flex items-center gap-1.5 shadow-sm"
-                >
-                  <MessageSquare className="w-3.5 h-3.5" /> Leave Workspace Note
-                </a>
-                <button 
-                  onClick={() => setSelectedWork(null)}
-                  className="px-4 py-2 border border-[#cbd5e1] hover:border-[#6e6e73] text-[#1d1d1f] text-xs font-medium rounded-full transition-colors cursor-pointer"
-                >
-                  Close
-                </button>
-              </div>
-            </footer>
-          </div>
-        </div>
-      )}
 
     </div>
   );

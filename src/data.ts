@@ -30,19 +30,19 @@ export const STRENGTHS_DATA: Strength[] = [
   },
   {
     id: "co-founder",
-    title: "I built a startup's operations from scratch.",
-    boldHighlight: "Co-founded Graaphene, an AI-powered care marketplace for working parents.",
-    description: "Onboarding, content strategy, provider matching, service playbooks — none of it existed. I figured out what was needed, built it, and made it work across parents and caregivers in Cook County.",
-    tag: "Operations · Startup · Graaphene",
+    title: "I got early startup experience as a teenager.",
+    boldHighlight: "Helped Graaphene, an AI-powered care marketplace, with content and operations support.",
+    description: "I created social media content, sat in on operational planning sessions, and helped the team think through how to communicate with parents and providers. My first taste of building something from zero.",
+    tag: "Content · Startup · Graaphene",
     iconName: "headset",
     colorClass: "var(--blue)"
   },
   {
     id: "social",
-    title: "I created 100+ pieces of content that people engaged with.",
-    boldHighlight: "Ran social media end-to-end — concept, copy, design, performance analysis.",
-    description: "I don't just post. I figure out what the audience responds to, make more of that, and cut what doesn't work. Every campaign has a number attached to it.",
-    tag: "Content Strategy · Social Media · Design",
+    title: "I created content that people actually engaged with.",
+    boldHighlight: "Produced social media content across multiple roles — concept, copy, and design.",
+    description: "From Graaphene's Instagram to Nao Now's editorial assets, I've created content that connects with real audiences. I think about what works, not just what looks good.",
+    tag: "Content Creation · Social Media · Design",
     iconName: "megaphone",
     colorClass: "var(--violet)"
   },
@@ -369,16 +369,15 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
   },
   {
     id: "graaphene",
-    role: "Content Media & Operations Support",
+    role: "Content & Operations Support",
     company: "Graaphene",
     period: "May 2021 – Sep 2023",
     logo: "/images/logos/graaphene.png",
     description: [
-      "I co-built this from nothing — an AI-powered care marketplace connecting working parents with childcare providers in Cook County.",
-      "I wrote the playbooks, designed the matching protocols, set up the SLAs, and handled everything operational while my co-founder handled the tech.",
-      "I created 100+ pieces of branded content on Instagram that actually drove sign-ups. [View content work →](https://www.instagram.com/graaphene/)"
+      "Helped an early-stage AI-powered care marketplace as a teenager — creating Instagram content, supporting operational planning, and learning how startups work from the inside.",
+      "Created social media posts and helped the team communicate with parents and childcare providers across Cook County. [View content →](https://www.instagram.com/graaphene/)"
     ],
-    skills: ["Operations", "Business Development", "Social Media", "Content Strategy"],
+    skills: ["Content Creation", "Social Media", "Operations Support"],
     type: "work"
   },
   {

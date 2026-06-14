@@ -55,7 +55,7 @@ export default function Resume() {
             <section className="mb-5">
               <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Summary</h2>
               <p className="text-[15px] leading-relaxed" style={{ color: "var(--ink)" }}>
-                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products — including this portfolio, shipped end-to-end with Claude Code. Co-built startup operations at Graaphene for childcare providers across Cook County. Coached 50+ writers at UIC, led a campus accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Fluent in Claude, ChatGPT, Gemini, and Canva AI for research, drafting, and strategy.
+                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products — including this portfolio, shipped end-to-end with Claude Code. Coached 50+ writers at UIC, led a campus accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Early startup experience creating content and supporting operations at Graaphene. Fluent in Claude, ChatGPT, Gemini, and Canva AI for research, drafting, and strategy.
               </p>
             </section>
 
@@ -101,14 +101,13 @@ export default function Resume() {
 
               <div className="mb-4">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Content Media & Operations Support</h3>
+                  <h3 className="font-bold text-[15px]">Content & Operations Support</h3>
                   <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2021 – Sep 2023</span>
                 </div>
                 <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Graaphene — AI-Powered Care Marketplace</p>
                 <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Co-built startup operations from the ground up: onboarding, content strategy, provider matching protocols, and service-level agreements for childcare providers across Cook County</li>
-                  <li>Produced 100+ branded content pieces across Instagram, driving parent engagement and provider acquisition</li>
-                  <li>Designed operational playbooks and scalable workflows that enabled the founding team to manage provider-parent relationships at scale</li>
+                  <li>Created social media content for Instagram, helping the startup communicate with parents and childcare providers across Cook County</li>
+                  <li>Supported operational planning sessions and learned early-stage startup workflows as a high school contributor</li>
                 </ul>
               </div>
 

@@ -411,17 +411,17 @@ export default function App() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-2 mt-6 lg:mt-0 p-1.5 rounded-full" style={{ background: "var(--tag-bg)", border: "1px solid var(--hair-soft)" }}>
+            <div className="flex gap-1 mt-6 lg:mt-0 p-1 rounded-full whitespace-nowrap" style={{ background: "var(--tag-bg)", border: "1px solid var(--hair-soft)" }}>
               {[
-                { key: "all", label: "All Work" },
-                { key: "pr", label: "Strategy & PR" },
-                { key: "research", label: "Product Analysis" },
-                { key: "journalism", label: "Research & Insight" }
+                { key: "all", label: "All" },
+                { key: "pr", label: "PR & Strategy" },
+                { key: "research", label: "Product" },
+                { key: "journalism", label: "Research" }
               ].map((category) => (
                 <button
                   key={category.key}
                   onClick={() => { setActiveCategory(category.key); setSelectedWork(null); }}
-                  className="px-4 py-1.5 rounded-full text-xs font-medium transition-all"
+                  className="px-4 py-1.5 rounded-full text-sm font-medium transition-all"
                   style={activeCategory === category.key
                     ? { background: "var(--card)", color: "var(--ink)", fontWeight: 600, boxShadow: "0 1px 3px rgba(0,0,0,.08)" }
                     : { color: "var(--ink-soft)" }
@@ -464,7 +464,7 @@ export default function App() {
                           </div>
                           {sample.image && (
                             <div className="h-[220px] md:h-[300px] overflow-hidden">
-                              <img src={sample.image} alt={sample.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                              <img src={sample.image} alt={sample.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                             </div>
                           )}
                         </div>
@@ -494,7 +494,7 @@ export default function App() {
                                 </div>
                                 {pair.image && (
                                   <div className="w-[90px] h-[90px] md:w-[110px] md:h-[110px] rounded-full overflow-hidden shrink-0 bg-black/5">
-                                    <img src={pair.image} alt={pair.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                                    <img src={pair.image} alt={pair.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" referrerPolicy="no-referrer" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
                                   </div>
                                 )}
                               </div>

@@ -76,6 +76,14 @@ export default function Resume() {
 
               <div className="mb-3">
                 <div className="flex justify-between items-baseline">
+                  <h3 className="font-bold text-[15px]">POW! ZAM! BAM!: Superheroes in Media — Tokyo, Japan</h3>
+                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2024 – Jun 2024</span>
+                </div>
+                <p className="text-[15px] italic">Study Abroad Program in Global Asian Studies</p>
+              </div>
+
+              <div className="mb-3">
+                <div className="flex justify-between items-baseline">
                   <h3 className="font-bold text-[15px]">The Second City</h3>
                   <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2017 – Jun 2017</span>
                 </div>

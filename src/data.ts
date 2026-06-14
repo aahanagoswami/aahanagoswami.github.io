@@ -3,10 +3,10 @@ import { Strength, WorkPiece, ExperienceItem } from "./types";
 export const STRENGTHS_DATA: Strength[] = [
   {
     id: "ai",
-    title: "I use AI to work faster.",
-    boldHighlight: "Claude, ChatGPT, Gemini, Canva AI — daily tools, not novelties.",
-    description: "I draft, research, and design with AI so a task that used to take days takes hours. The quality stays high because I know what good looks like before I prompt.",
-    tag: "AI Tools · Research · Drafting · Design",
+    title: "I turn ideas into products with AI.",
+    boldHighlight: "I built this entire portfolio site using Claude Code — no CS degree, no engineer.",
+    description: "I define the user need, write a clear spec, and use AI to build it. Claude Code, ChatGPT, Gemini, Canva AI — I go from problem to shipped product. When it gets complex, I collaborate with engineers. The skill isn't coding — it's knowing exactly what to ask for.",
+    tag: "AI Product Delivery · Claude Code · Spec Writing",
     iconName: "cpu",
     colorClass: "var(--indigo)"
   },

@@ -822,8 +822,13 @@ export default function App() {
       {/* Footer */}
       <footer className="py-12 text-center text-xs border-t" style={{ color: "var(--ink-soft)", borderColor: "var(--hair-soft)" }}>
         <div className="max-w-[1120px] mx-auto px-6">
-          <p className="mb-2">© {new Date().getFullYear()} Aahana Goswami · University of Illinois Chicago</p>
-          <p style={{ color: "var(--hair)", opacity: 0.85 }}>Built with modern React and premium Apple Card design principles.</p>
+          <p className="mb-3">© {new Date().getFullYear()} Aahana Goswami · University of Illinois Chicago</p>
+          <p className="text-sm font-medium mb-1" style={{ color: "var(--ink-soft)" }}>
+            I built this site myself using <span style={{ color: "var(--blue)" }}>Claude Code</span>, React, and GitHub Pages — no CS degree needed.
+          </p>
+          <p style={{ color: "var(--ink-soft)", opacity: 0.7 }}>
+            I write the spec. AI writes the code. I ship the product.
+          </p>
         </div>
       </footer>
 

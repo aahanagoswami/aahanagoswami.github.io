@@ -59,49 +59,6 @@ export default function Resume() {
               </p>
             </section>
 
-            {/* Education */}
-            <section className="mb-5">
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Education</h2>
-
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">University of Illinois Chicago (UIC)</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Aug 2023 – May 2026</span>
-                </div>
-                <p className="text-[15px] italic">B.A. in Communication & English Literature — Summa Cum Laude, GPA: 4.0/4.0</p>
-                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
-                  Sigma Tau Delta Honor Society · UIC Honors College · Red Shoes Review Assistant Editor · Writing Center Tutor · Faculty Union · Dean's List
-                </p>
-              </div>
-
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">POW! ZAM! BAM!: Superheroes in Media — Tokyo, Japan</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2024 – Jun 2024</span>
-                </div>
-                <p className="text-[15px] italic">Study Abroad Program in Global Asian Studies</p>
-                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
-                  Studied how superhero narratives shape cultural identity across Japanese and American media — analyzing anime, manga, and film through the lens of digital media, storytelling, and cross-cultural communication.
-                </p>
-              </div>
-
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">The Second City</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2017 – Jun 2017</span>
-                </div>
-                <p className="text-[15px] italic">Improvisation & Stand-up Comedy — 50% Scholarship Recipient</p>
-              </div>
-
-              <div>
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">James B. Conant High School</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2018 – 2023</span>
-                </div>
-                <p className="text-[15px] italic">High School Diploma — Liberal Arts & Sciences</p>
-              </div>
-            </section>
-
             {/* Experience */}
             <section className="mb-5">
               <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Experience</h2>
@@ -175,6 +132,49 @@ export default function Resume() {
                 <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
                   <li>Completed entrepreneurship-focused internship: pitching business plans, building cross-functional teams, and developing creative writing and business development skills</li>
                 </ul>
+              </div>
+            </section>
+
+            {/* Education */}
+            <section className="mb-5">
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Education</h2>
+
+              <div className="mb-3">
+                <div className="flex justify-between items-baseline">
+                  <h3 className="font-bold text-[15px]">University of Illinois Chicago (UIC)</h3>
+                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Aug 2023 – May 2026</span>
+                </div>
+                <p className="text-[15px] italic">B.A. in Communication & English Literature — Summa Cum Laude, GPA: 4.0/4.0</p>
+                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
+                  Sigma Tau Delta Honor Society · UIC Honors College · Red Shoes Review Assistant Editor · Writing Center Tutor · Faculty Union · Dean's List
+                </p>
+              </div>
+
+              <div className="mb-3">
+                <div className="flex justify-between items-baseline">
+                  <h3 className="font-bold text-[15px]">POW! ZAM! BAM!: Superheroes in Media — Tokyo, Japan</h3>
+                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2024 – Jun 2024</span>
+                </div>
+                <p className="text-[15px] italic">Study Abroad Program in Global Asian Studies</p>
+                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
+                  Studied how superhero narratives shape cultural identity across Japanese and American media — analyzing anime, manga, and film through the lens of digital media, storytelling, and cross-cultural communication.
+                </p>
+              </div>
+
+              <div className="mb-3">
+                <div className="flex justify-between items-baseline">
+                  <h3 className="font-bold text-[15px]">The Second City</h3>
+                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2017 – Jun 2017</span>
+                </div>
+                <p className="text-[15px] italic">Improvisation & Stand-up Comedy — 50% Scholarship Recipient</p>
+              </div>
+
+              <div>
+                <div className="flex justify-between items-baseline">
+                  <h3 className="font-bold text-[15px]">James B. Conant High School</h3>
+                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2018 – 2023</span>
+                </div>
+                <p className="text-[15px] italic">High School Diploma — Liberal Arts & Sciences</p>
               </div>
             </section>
 

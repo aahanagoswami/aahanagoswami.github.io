@@ -277,6 +277,7 @@ export default function App() {
       <section id="about" className="py-[54px] section-white border-y" style={{ borderColor: "var(--hair)" }}>
         <div className="max-w-[1120px] mx-auto px-6">
           <div className="max-w-3xl">
+            <h2 className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: "var(--ink-soft)" }}>About Me</h2>
             <p className="about-statement" style={{ color: "var(--ink)" }}>
               I break down complex problems, build the case, and present it so people act. At <span style={{ color: "var(--blue)" }}>Graaphene</span>, I built a startup's operations from scratch — onboarding, content, service delivery — solving problems no one had framed yet. At <span style={{ color: "var(--blue)" }}>UIC</span>, I graduated with a 4.0 while coaching writers to sharpen their arguments, leading accessibility campaigns, and running product analyses that found what was actually broken. I use <span style={{ color: "var(--blue)" }}>AI tools daily</span> — Claude, ChatGPT, Gemini — to move faster on research, drafting, and strategy. I solve problems, structure information, and tell the story that convinces the room.
             </p>
@@ -360,7 +361,30 @@ export default function App() {
               if (activeTab === "work" && (exp.type === "work" || exp.type === "advocacy")) return true;
               if (activeTab === "advocacy" && exp.type === "education") return true;
               return false;
-            }).map((exp) => (
+            }).map((exp) => exp.type === "education" ? (
+              <div
+                key={exp.id}
+                className="p-4 md:p-5 rounded-[16px] transition-colors flex items-center gap-4"
+                style={{ border: "1px solid var(--hair)", background: "var(--card)" }}
+              >
+                <div className="w-10 h-10 overflow-hidden flex items-center justify-center shrink-0">
+                  {exp.logo ? (
+                    <img src={exp.logo} alt={exp.company} className="max-w-full max-h-full object-contain" style={exp.id === "second-city" ? { filter: "var(--logo-invert, invert(1))" } : undefined} />
+                  ) : (
+                    <div className="w-full h-full rounded-lg flex items-center justify-center" style={{ background: "var(--tag-bg)" }}>
+                      <GraduationCap className="w-4 h-4" style={{ color: "var(--indigo)" }} />
+                    </div>
+                  )}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <h3 className="text-[15px] font-bold leading-snug" style={{ color: "var(--ink)" }}>{exp.role}</h3>
+                    <span className="text-xs whitespace-nowrap" style={{ color: "var(--ink-soft)" }}>{exp.period}</span>
+                  </div>
+                  <div className="text-sm mt-0.5" style={{ color: "var(--ink-soft)" }}>{exp.company}</div>
+                </div>
+              </div>
+            ) : (
               <div
                 key={exp.id}
                 className="p-6 md:p-8 rounded-[22px] transition-colors flex flex-col md:flex-row gap-5 justify-between items-start"
@@ -654,21 +678,20 @@ export default function App() {
                     <ChevronRight className="w-4 h-4" style={{ color: "var(--ink-soft)" }} />
                   </a>
 
-                  <a
-                    href="https://agosw2.myportfolio.com/about-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between p-4 rounded-2xl transition-colors"
+                  <div
+                    className="flex items-center justify-between p-4 rounded-2xl"
                     style={{ background: "var(--card)", border: "1px solid var(--hair)" }}
                   >
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-xl" style={{ background: "var(--tag-bg)", color: "var(--indigo)" }}>
-                        <FileText className="w-5 h-5" />
+                        <BookOpen className="w-5 h-5" />
                       </div>
-                      <span className="text-sm font-semibold" style={{ color: "var(--ink)" }}>agosw2.myportfolio.com</span>
+                      <div>
+                        <span className="text-sm font-semibold block" style={{ color: "var(--ink)" }}>Writing Portfolio on Medium</span>
+                        <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Coming soon</span>
+                      </div>
                     </div>
-                    <ChevronRight className="w-4 h-4" style={{ color: "var(--ink-soft)" }} />
-                  </a>
+                  </div>
                 </div>
               </div>
 

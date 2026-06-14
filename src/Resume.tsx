@@ -80,6 +80,9 @@ export default function Resume() {
                   <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2024 – Jun 2024</span>
                 </div>
                 <p className="text-[15px] italic">Study Abroad Program in Global Asian Studies</p>
+                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
+                  Studied how superhero narratives shape cultural identity across Japanese and American media — analyzing anime, manga, and film through the lens of digital media, storytelling, and cross-cultural communication.
+                </p>
               </div>
 
               <div className="mb-3">

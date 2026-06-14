@@ -27,7 +27,7 @@ export default function Resume() {
           <div className="flex justify-between items-center mb-8 no-print">
             <div>
               <h1 className="text-3xl font-bold" style={{ color: "var(--ink)" }}>Resume</h1>
-              <p className="text-sm mt-1" style={{ color: "var(--ink-soft)" }}>ATS-optimized · Click download for PDF</p>
+              <p className="text-sm mt-1" style={{ color: "var(--ink-soft)" }}>Click download for PDF</p>
             </div>
             <button
               onClick={handleDownload}

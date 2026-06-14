@@ -225,7 +225,7 @@ export default function App() {
                 <span className="sub">Clear thinking, clear writing.</span>
               </h1>
               <p className="hero-lede">
-                Summa Cum Laude, Communication & English Literature, UIC. I take messy problems and turn them into clear strategies, sharp writing, and work that moves people to act.
+                Summa Cum Laude, Communication & English Literature, UIC. I solve problems, build compelling cases, and present ideas that move people to act.
               </p>
 
               <div className="hero-cta">
@@ -260,7 +260,7 @@ export default function App() {
         <div className="max-w-[1120px] mx-auto px-6">
           <div className="max-w-3xl">
             <p className="about-statement" style={{ color: "var(--ink)" }}>
-              I solve problems by making them simple. At <span style={{ color: "var(--blue)" }}>Graaphene</span>, I built a startup's operations from scratch — onboarding, content, service delivery — and learned that the hardest problems are always about people, not systems. At <span style={{ color: "var(--blue)" }}>UIC</span>, I graduated with a 4.0 while coaching other writers to think more clearly, leading accessibility campaigns, and analyzing products to find what's actually broken. I use <span style={{ color: "var(--blue)" }}>AI tools daily</span> — Claude, ChatGPT, Gemini — to move faster on research, drafting, and strategy. I'm looking for work where clear thinking and clear communication are the whole job.
+              I break down complex problems, build the case, and present it so people act. At <span style={{ color: "var(--blue)" }}>Graaphene</span>, I built a startup's operations from scratch — onboarding, content, service delivery — solving problems no one had framed yet. At <span style={{ color: "var(--blue)" }}>UIC</span>, I graduated with a 4.0 while coaching writers to sharpen their arguments, leading accessibility campaigns, and running product analyses that found what was actually broken. I use <span style={{ color: "var(--blue)" }}>AI tools daily</span> — Claude, ChatGPT, Gemini — to move faster on research, drafting, and strategy. I solve problems, structure information, and tell the story that convinces the room.
             </p>
           </div>
         </div>
@@ -616,7 +616,7 @@ export default function App() {
                   Let's talk.
                 </h2>
                 <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--ink-soft)" }}>
-                  I'm looking for roles in strategy, communications, and consulting — where clear thinking and clear writing are the whole job. Open to internships, assistantships, and full-time opportunities.
+                  I'm looking for roles in strategy, communications, and consulting — where I can solve problems, present ideas, and tell the story that gets people to yes. Open to internships, assistantships, and full-time opportunities.
                 </p>
 
                 <div className="flex flex-col gap-4 max-w-sm">

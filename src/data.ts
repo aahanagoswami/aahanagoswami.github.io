@@ -325,69 +325,6 @@ The article proposes expanding Illinois's Monetary Award Program grants — need
 
 The authors conclude by urging student participation in electoral processes as the primary mechanism for demanding educational affordability and systemic change.`
   },
-  {
-    id: "resume",
-    title: "Full Résumé — Experience, Skills & Honors",
-    subtitle: "Summa Cum Laude · 4.0 GPA · Writing Center · Graaphene · Dean's List",
-    description: "Summa Cum Laude, 4.0 GPA, Communication & English Literature. Startup operations, competitive writing awards, and a track record of making messy problems clear.",
-    outcome: "Summa Cum Laude · 4.0 GPA · Multiple awards · 2 professional roles",
-    image: "https://images.unsplash.com/photo-1523289333742-be1143f6b766?w=800&q=80",
-    url: "https://agosw2.myportfolio.com/resume",
-    category: "all",
-    skillsUsed: ["Strategic Communication", "Operations Design", "Leadership", "AI Tools"],
-    fullContent: `# AAHANA GOSWAMI
-Chicago, IL · aasignshere@gmail.com · [LinkedIn Profile](https://www.linkedin.com/in/aahana-goswami)
-
----
-
-### PROFESSIONAL PROFILE
-Summa Cum Laude graduate in Communication and English Literature from the University of Illinois Chicago. Proven capability in startup operations, writing program support, social media content, and community-facing advocacy.
-
----
-
-### KEY EXPERIENCES
-
-#### Writing Consultant 
-**University of Illinois Chicago Writing Center (2023 - 2025)**
-* Conducted detailed, peer-to-peer consultations with diverse student groups, editing for structural flow, academic clarity, and audience focus.
-* Led campus outreach workshops designed to simplify complex essay prompts for multi-lingual and international student scholars.
-
-#### Content, Media & Operations Support
-**Graaphene — AI Powered Care Marketplace (2024 - 2025)**
-* Managed client onboarding, operational guidelines, and scheduling protocols for localized child caretakers in the Cook County area.
-* Spearheaded content generation to build trust across digital consumer networks, developing operational playbooks used by the care marketplace.
-
----
-
-### EDUCATION & HONORS
-* **B.A. in Communication and English Literature, Summa Cum Laude** — University of Illinois Chicago (UIC), GPA: 4.0/4.0.
-* Honors: Summa Cum Laude, competitive pitch competition champion, Dean's List, accessibility advocate team leader.`
-  },
-  {
-    id: "full-portfolio",
-    title: "Explore the Complete Portfolio",
-    subtitle: "Additional writing samples, creative campaigns, and project archives.",
-    description: "A curated collection of work spanning PR, content strategy, research, and creative storytelling — built to demonstrate range, rigor, and the ability to deliver across formats and audiences.",
-    outcome: "Full archive · Multiple formats · End-to-end project ownership",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80",
-    url: "https://agosw2.myportfolio.com/about-2",
-    category: "all",
-    skillsUsed: ["Creative Direction", "Information Architecture", "Cross-Format Writing"],
-    fullContent: `# WELCOME TO THE INTEGRATED PORTFOLIO WORKSPACE OF AAHANA GOSWAMI
-
-My research and creative workflows center on one core mandate: **simplify communication and heighten connection.**
-
-Inside this custom database, you will find writing assets created to build real relationships. Rather than hosting an external site, this setup allows you to read my primary compositions directly. I welcome all inquiries regarding PR placements, corporate communication consulting, and design writing assignments:
-
----
-
-### Key Information:
-* **Direct Email Inbox:** aasignshere@gmail.com
-* **UIC Office Address:** University Hall m/c 152, Chicago, IL 60607
-* **Primary Skillsets:** Public Relations writing, AP style guide standards, Heuristic UX assessments, startup planning.
-
-*Thank you for exploring my connected work. Let's make an impact together.*`
-  }
 ];
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [

@@ -24,9 +24,11 @@ import {
 import { STRENGTHS_DATA, WORK_DATA, EXPERIENCE_DATA } from "./data";
 import { PORTRAIT_IMAGE } from "./imageAsset";
 import { WorkPiece } from "./types";
+import Resume from "./Resume";
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
+  const [showResume, setShowResume] = useState<boolean>(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<"work" | "advocacy" | "all-exp">("all-exp");
   const [selectedWork, setSelectedWork] = useState<WorkPiece | null>(null);
@@ -143,11 +145,20 @@ export default function App() {
 
           {/* Desktop Links */}
           <div className="hidden sm:flex items-center gap-[26px]">
-            <a href="#about" className="nav-link">About</a>
-            <a href="#strengths" className="nav-link">Capabilities</a>
-            <a href="#experience" className="nav-link">Experience</a>
-            <a href="#work" className="nav-link">Portfolio</a>
-            <a href="#connect" className="nav-link">Connect</a>
+            {showResume ? (
+              <button onClick={() => setShowResume(false)} className="nav-link">Back to Portfolio</button>
+            ) : (
+              <>
+                <a href="#about" className="nav-link">About</a>
+                <a href="#strengths" className="nav-link">Capabilities</a>
+                <a href="#experience" className="nav-link">Experience</a>
+                <a href="#work" className="nav-link">Portfolio</a>
+                <a href="#connect" className="nav-link">Connect</a>
+              </>
+            )}
+            <button onClick={() => { setShowResume(!showResume); window.scrollTo(0, 0); }} className="nav-link" style={{ color: "var(--blue)" }}>
+              {showResume ? "Portfolio" : "Resume"}
+            </button>
             <button
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               className="theme-toggle"
@@ -185,7 +196,7 @@ export default function App() {
                 { href: "#experience", label: "Experience" },
                 { href: "#work", label: "Portfolio" },
                 { href: "#connect", label: "Leave a Note" },
-              ].map((link) => (
+              ].filter(() => !showResume).map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -195,6 +206,12 @@ export default function App() {
                   {link.label}
                 </a>
               ))}
+              <button
+                onClick={() => { setShowResume(!showResume); setMobileMenuOpen(false); window.scrollTo(0, 0); }}
+                className="text-base font-medium" style={{ color: "var(--blue)" }}
+              >
+                {showResume ? "Back to Portfolio" : "Resume"}
+              </button>
               <a
                 href="https://www.linkedin.com/in/aahana-goswami"
                 target="_blank"
@@ -211,6 +228,7 @@ export default function App() {
 
       <a id="top"></a>
 
+      {showResume ? <Resume /> : <>
       {/* Hero Header Section — matches original HTML grid */}
       <header className="hero-section">
         <div className="max-w-[1120px] mx-auto px-6">
@@ -809,7 +827,7 @@ export default function App() {
         </div>
       </footer>
 
-
+      </>}
     </div>
   );
 }

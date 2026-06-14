@@ -55,7 +55,7 @@ export default function Resume() {
             <section className="mb-5">
               <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Summary</h2>
               <p className="text-[15px] leading-relaxed" style={{ color: "var(--ink)" }}>
-                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who builds end-to-end AI solutions and enables non-technical teams to adopt them. Built a full portfolio site independently using Claude Code. Experience scoping ambiguous problems, shipping workflows, and training mixed audiences at a startup serving underserved communities. Published journalist (6+ bylines on policy and human rights). Proficient in Claude, ChatGPT, Gemini, and Canva AI for research, drafting, strategy, and product delivery.
+                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products — including this portfolio, shipped end-to-end with Claude Code. Co-built startup operations at Graaphene for childcare providers across Cook County. Coached 50+ writers at UIC, led a campus accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Fluent in Claude, ChatGPT, Gemini, and Canva AI for research, drafting, and strategy.
               </p>
             </section>
 

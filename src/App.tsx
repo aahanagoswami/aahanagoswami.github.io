@@ -236,14 +236,14 @@ export default function App() {
 
             <div>
               <div className="hero-kicker">
-                AI + Social Impact · Strategy · Communications · Research
+                Communications · AI · Strategy · Social Impact
               </div>
               <h1 className="hero-title">
                 Aahana Goswami.<br />
-                <span className="sub">I build with AI and teach others to do the same.</span>
+                <span className="sub">Not an engineer. I build things anyway.</span>
               </h1>
               <p className="hero-lede">
-                Summa Cum Laude, Communication & English Literature, UIC. I ship AI-powered solutions, enable non-technical teams, and solve problems at the intersection of technology and social impact.
+                Summa Cum Laude, Communication & English Literature, UIC. I use AI the way most people use Google — every day, for everything — and I've gotten good enough to ship real products with it.
               </p>
 
               <div className="hero-cta">
@@ -279,7 +279,7 @@ export default function App() {
           <div className="max-w-3xl">
             <h2 className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: "var(--ink-soft)" }}>About Me</h2>
             <p className="about-statement" style={{ color: "var(--ink)" }}>
-              I build end-to-end solutions with AI and enable others to do the same. I built <span style={{ color: "var(--blue)" }}>this entire portfolio</span> using Claude Code — no CS degree, no engineer. At <span style={{ color: "var(--blue)" }}>Graaphene</span>, I scoped problems, designed operations, and shipped workflows for a startup serving underserved communities. At <span style={{ color: "var(--blue)" }}>UIC</span>, I coached writers one-on-one, led an accessibility campaign across 5 organizations, and ran usability analyses that found what was actually broken. I use <span style={{ color: "var(--blue)" }}>Claude, ChatGPT, and Gemini daily</span> — for research, drafting, and strategy. I thrive in ambiguity, wear multiple hats, and make complex tools accessible to non-technical teams.
+              I'm a communications person who figured out how to build. I made <span style={{ color: "var(--blue)" }}>this entire site</span> with Claude Code — wrote the spec, prompted the code, debugged the deploy, shipped it to GitHub Pages. No engineer involved. At <span style={{ color: "var(--blue)" }}>Graaphene</span>, I co-built a startup from scratch — onboarding playbooks, content systems, provider matching — for childcare providers across Cook County. At <span style={{ color: "var(--blue)" }}>UIC</span>, I coached 50+ writers to fix their own arguments, led an accessibility campaign that mobilized 5 organizations, and ran product teardowns that found real UX failures. I use <span style={{ color: "var(--blue)" }}>Claude, ChatGPT, and Gemini</span> the way most people use a search bar — every day, for real work, not demos.
             </p>
           </div>
         </div>
@@ -658,7 +658,7 @@ export default function App() {
                   Let's talk.
                 </h2>
                 <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--ink-soft)" }}>
-                  I'm looking for fellowships and roles where I can build AI-powered solutions for organizations that need them most — nonprofits, public-interest groups, and mission-driven teams. I scope the problem, ship the tool, and teach the team to own it after I leave. Open to fellowships, consulting, and full-time opportunities.
+                  I want to work where clear thinking and AI fluency actually help people — at nonprofits, in public service, on teams solving hard problems with small budgets. I'm at my best when I'm figuring out what an organization needs, building it, and showing them how to run it without me. Open to fellowships, consulting, and full-time roles.
                 </p>
 
                 <div className="flex flex-col gap-4 max-w-sm">
@@ -833,7 +833,7 @@ export default function App() {
       <section className="py-6 max-w-[1120px] mx-auto px-6">
         <div className="connect-banner rounded-[28px] p-10 md:p-14 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Let's build something that matters.</h2>
-          <p className="mt-3 max-w-lg mx-auto">Open to AI fellowships, social-impact roles, and consulting positions — anywhere I can build solutions, enable teams, and drive change.</p>
+          <p className="mt-3 max-w-lg mx-auto">Looking for the right team — where I can think clearly, build fast, and make people's work easier.</p>
           <div className="mt-8 flex gap-4 justify-center flex-wrap">
             <a className="btn primary px-6 py-3 rounded-full text-sm font-medium bg-white text-[#1d1d1f] hover:bg-slate-100 transition-colors" href="https://www.linkedin.com/in/aahana-goswami" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a className="btn line px-6 py-3 rounded-full text-sm font-medium border border-[#4a4a4e] text-white hover:border-white transition-colors focus:ring-1 focus:ring-white/40" href="#connect">Leave a Note</a>

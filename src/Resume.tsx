@@ -107,7 +107,7 @@ export default function Resume() {
                 <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Graaphene — AI-Powered Care Marketplace</p>
                 <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
                   <li>Created social media content for Instagram, helping the startup communicate with parents and childcare providers across Cook County</li>
-                  <li>Supported operational planning sessions and learned early-stage startup workflows as a high school contributor</li>
+                  <li>Supported operational planning and helped present the product concept to stakeholders</li>
                 </ul>
               </div>
 
@@ -130,6 +130,7 @@ export default function Resume() {
                 <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Future Founders</p>
                 <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
                   <li>Completed entrepreneurship-focused internship: pitching business plans, building cross-functional teams, and developing creative writing and business development skills</li>
+                  <li>Wrote, directed, recorded, and presented a video project end-to-end — from script to final delivery</li>
                 </ul>
               </div>
             </section>

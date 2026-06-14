@@ -375,7 +375,9 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     logo: "/images/logos/graaphene.png",
     description: [
       "Helped an early-stage AI-powered care marketplace as a teenager — creating Instagram content, supporting operational planning, and learning how startups work from the inside.",
-      "Created social media posts and helped the team communicate with parents and childcare providers across Cook County. [View content →](https://www.instagram.com/graaphene/)"
+      "Created social media posts and helped the team communicate with parents and childcare providers across Cook County. [View content →](https://www.instagram.com/graaphene/)",
+      "Helped present the product concept to stakeholders. [Watch product concept →](https://www.youtube.com/watch?v=7NhmULXc5vM)",
+      "Supported day-to-day operations and team coordination. [Watch operations work →](https://www.youtube.com/watch?v=5oQ1f3ysAIM)"
     ],
     skills: ["Content Creation", "Social Media", "Operations Support"],
     type: "work"
@@ -399,9 +401,10 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "May 2022 – Aug 2022",
     logo: "/images/logos/futurefounders.png",
     description: [
-      "I learned how startups actually work — pitching, building teams, writing business plans, and shipping under pressure."
+      "I learned how startups actually work — pitching, building teams, writing business plans, and shipping under pressure.",
+      "Wrote, directed, recorded, and presented a video project from start to finish. [Watch my video →](https://www.linkedin.com/feed/update/urn:li:activity:6946637752427851776/)"
     ],
-    skills: ["Teamwork", "Creative Writing", "Entrepreneurship", "Business Planning"],
+    skills: ["Teamwork", "Creative Writing", "Entrepreneurship", "Video Production", "Business Planning"],
     type: "work"
   },
   {

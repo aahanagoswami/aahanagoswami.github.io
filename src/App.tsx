@@ -218,14 +218,14 @@ export default function App() {
 
             <div>
               <div className="hero-kicker">
-                Storyteller, Content & Media, Communications, Marketing, PR, Consulting
+                Communications · Strategy · Content · Research
               </div>
               <h1 className="hero-title">
                 Aahana Goswami.<br />
-                <span className="sub">Communication built to connect.</span>
+                <span className="sub">Clear thinking, clear writing.</span>
               </h1>
               <p className="hero-lede">
-                Summa Cum Laude graduate in Communication and English Literature from UIC — working at the intersection of media, public perception, and social impact through public relations, advocacy, and strategic communication.
+                Summa Cum Laude, Communication & English Literature, UIC. I take messy problems and turn them into clear strategies, sharp writing, and work that moves people to act.
               </p>
 
               <div className="hero-cta">
@@ -259,9 +259,8 @@ export default function App() {
       <section id="about" className="py-[54px] section-white border-y" style={{ borderColor: "var(--hair)" }}>
         <div className="max-w-[1120px] mx-auto px-6">
           <div className="max-w-3xl">
-            <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--ink-soft)" }}>Core Statement</h3>
             <p className="about-statement" style={{ color: "var(--ink)" }}>
-              I do my clearest thinking when things are ambiguous — breaking down complex problems, aligning stakeholders with competing priorities, and building narratives that drive action. As a founding member of Graaphene, an AI-powered care marketplace, I designed operations and engagement systems from the ground up — learning that the hardest problems aren't technical, they're human. At UIC, I sharpened that instinct across <span style={{ color: "var(--blue)" }}>strategic communication, rhetoric, and consumer behavior</span>, earning highest honors while consulting with writers to restructure complex arguments, leading accessibility advocacy across campus organizations, and showing up through personal adversity with the kind of <span style={{ color: "var(--blue)" }}>resilience, judgment, and grace under pressure</span> that no transcript captures. I work fluently with <span style={{ color: "var(--blue)" }}>Claude, Gemini, ChatGPT, and Canva AI</span> — not as shortcuts, but as force multipliers for research, analysis, and content strategy. What drives me is the intersection of <span style={{ color: "var(--blue)" }}>analytical rigor and creative storytelling</span> — and I'm looking to bring that to strategy and consulting.
+              I solve problems by making them simple. At <span style={{ color: "var(--blue)" }}>Graaphene</span>, I built a startup's operations from scratch — onboarding, content, service delivery — and learned that the hardest problems are always about people, not systems. At <span style={{ color: "var(--blue)" }}>UIC</span>, I graduated with a 4.0 while coaching other writers to think more clearly, leading accessibility campaigns, and analyzing products to find what's actually broken. I use <span style={{ color: "var(--blue)" }}>AI tools daily</span> — Claude, ChatGPT, Gemini — to move faster on research, drafting, and strategy. I'm looking for work where clear thinking and clear communication are the whole job.
             </p>
           </div>
         </div>
@@ -272,10 +271,10 @@ export default function App() {
         <div className="max-w-[1120px] mx-auto px-6">
           <div className="mb-[34px] max-w-[46rem]">
             <h2 className="section-title mb-3" style={{ color: "var(--ink)" }}>
-              What Aahana brings. <span style={{ color: "var(--ink-soft)" }}>A few reasons to work with her.</span>
+              What I do well. <span style={{ color: "var(--ink-soft)" }}>And how I know.</span>
             </h2>
-            <p className="mt-3 text-[17px]" style={{ color: "var(--ink-soft)" }}>
-              From founding startup projects to classroom writing center consultations — demonstrated strengths through real work.
+            <p className="mt-3 text-[19px]" style={{ color: "var(--ink-soft)" }}>
+              Each of these came from real work — not coursework, not theory.
             </p>
           </div>
 
@@ -312,10 +311,10 @@ export default function App() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-[34px]">
             <div className="max-w-xl">
               <h2 className="section-title mb-3" style={{ color: "var(--ink)" }}>
-                Action-led journey. <span style={{ color: "var(--ink-soft)" }}>Professional and Academic road.</span>
+                Where I've worked. <span style={{ color: "var(--ink-soft)" }}>And what I did there.</span>
               </h2>
-              <p className="mt-3 text-[17px]" style={{ color: "var(--ink-soft)" }}>
-                Proven analytical focus and operational setup in academic settings and self-driven business ventures.
+              <p className="mt-3 text-[19px]" style={{ color: "var(--ink-soft)" }}>
+                Startups, research, writing, advocacy — every role taught me something I use daily.
               </p>
             </div>
 
@@ -364,10 +363,10 @@ export default function App() {
                     )}
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold leading-snug" style={{ color: "var(--ink)" }}>{exp.role}</h3>
-                    <div className="text-sm font-medium mt-0.5" style={{ color: "var(--ink-soft)" }}>{exp.company}</div>
+                    <h3 className="text-xl font-bold leading-snug" style={{ color: "var(--ink)" }}>{exp.role}</h3>
+                    <div className="text-[15px] font-medium mt-1" style={{ color: "var(--ink-soft)" }}>{exp.company}</div>
 
-                    <ul className="mt-3 space-y-2 max-w-2xl text-sm" style={{ color: "var(--ink)" }}>
+                    <ul className="mt-3 space-y-2 max-w-2xl text-[15px]" style={{ color: "var(--ink)" }}>
                       {exp.description.map((bullet, bIdx) => (
                         <li key={bIdx} className="flex items-start gap-2">
                           <span className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ background: "var(--blue)" }}></span>
@@ -379,13 +378,13 @@ export default function App() {
                 </div>
 
                 <div className="flex flex-col items-start md:items-end justify-between h-full gap-3 w-full md:w-auto">
-                  <span className="text-xs font-semibold py-1.5 px-3 rounded-full whitespace-nowrap" style={{ color: "var(--ink-soft)", background: "var(--tag-bg)" }}>
+                  <span className="text-sm font-semibold py-1.5 px-3 rounded-full whitespace-nowrap" style={{ color: "var(--ink-soft)", background: "var(--tag-bg)" }}>
                     {exp.period}
                   </span>
 
-                  <div className="flex flex-wrap gap-1 md:justify-end">
+                  <div className="flex flex-wrap gap-1.5 md:justify-end">
                     {exp.skills.map((skill, sIdx) => (
-                      <span key={sIdx} className="text-[10px] font-medium py-1 px-2 rounded-full" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)" }}>
+                      <span key={sIdx} className="text-xs font-medium py-1 px-2.5 rounded-full" style={{ background: "var(--tag-bg)", color: "var(--ink-soft)" }}>
                         {skill}
                       </span>
                     ))}
@@ -405,10 +404,10 @@ export default function App() {
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-[34px]">
             <div className="max-w-[46rem]">
               <h2 className="section-title mb-3" style={{ color: "var(--ink)" }}>
-                Selected work. <span style={{ color: "var(--ink-soft)" }}>Real problems, real outcomes.</span>
+                My work. <span style={{ color: "var(--ink-soft)" }}>Click any card to see the full story.</span>
               </h2>
-              <p className="mt-3 text-[17px]" style={{ color: "var(--ink-soft)" }}>
-                Each piece solved a real problem — click any card to read the full case study.
+              <p className="mt-3 text-[19px]" style={{ color: "var(--ink-soft)" }}>
+                Campaigns I launched, products I analyzed, articles I published.
               </p>
             </div>
 
@@ -614,10 +613,10 @@ export default function App() {
               <div>
                 <h3 className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--ink-soft)" }}>Next Steps</h3>
                 <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4" style={{ color: "var(--ink)" }}>
-                  Let's craft some shared words.
+                  Let's talk.
                 </h2>
-                <p className="text-base leading-relaxed mb-8" style={{ color: "var(--ink-soft)" }}>
-                  Aahana is actively pursuing internships, assistantships and full-time entry-level opportunities in public relations agency work, strategic copywriting, social growth partnerships and consumer digital consulting.
+                <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--ink-soft)" }}>
+                  I'm looking for roles in strategy, communications, and consulting — where clear thinking and clear writing are the whole job. Open to internships, assistantships, and full-time opportunities.
                 </p>
 
                 <div className="flex flex-col gap-4 max-w-sm">
@@ -704,7 +703,7 @@ export default function App() {
             {/* Local Interactive Mailbox Form */}
             <div className="lg:col-span-7">
               <div className="p-8 md:p-10 rounded-[28px]" style={{ background: "var(--card)", border: "1px solid var(--hair)" }}>
-                <h3 className="text-xl font-bold mb-1" style={{ color: "var(--ink)" }}>Leave Aahana a workspace note</h3>
+                <h3 className="text-xl font-bold mb-1" style={{ color: "var(--ink)" }}>Leave me a note</h3>
                 <p className="text-sm mb-6" style={{ color: "var(--ink-soft)" }}>Want to request a press asset, resume PDF, or check her availability? Write below!</p>
                 
                 <form onSubmit={handleContactSubmit} className="space-y-4">
@@ -777,7 +776,7 @@ export default function App() {
                       type="submit"
                       className="w-full py-3.5 rounded-full btn-primary font-medium text-sm flex items-center justify-center gap-2 cursor-pointer focus:ring-2 focus:ring-[#0a66c2]/15"
                     >
-                      <Mail className="w-4 h-4" /> Send Note to Aahana
+                      <Mail className="w-4 h-4" /> Send Note
                     </button>
                   )}
                 </form>

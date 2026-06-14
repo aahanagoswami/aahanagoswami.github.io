@@ -3,55 +3,55 @@ import { Strength, WorkPiece, ExperienceItem } from "./types";
 export const STRENGTHS_DATA: Strength[] = [
   {
     id: "ai",
-    title: "Accelerates every deliverable with AI.",
-    boldHighlight: "Leverages Claude, ChatGPT, Gemini, and Canva AI to move faster without sacrificing quality.",
-    description: "Embeds AI into research, drafting, and design workflows — turning around high-impact content in hours, not days, while keeping editorial standards razor-sharp.",
-    tag: "AI-Powered Workflows · Claude · ChatGPT · Gemini · Canva AI",
+    title: "I use AI to work faster.",
+    boldHighlight: "Claude, ChatGPT, Gemini, Canva AI — daily tools, not novelties.",
+    description: "I draft, research, and design with AI so a task that used to take days takes hours. The quality stays high because I know what good looks like before I prompt.",
+    tag: "AI Tools · Research · Drafting · Design",
     iconName: "cpu",
     colorClass: "var(--indigo)"
   },
   {
     id: "writing",
-    title: "Sharpened arguments through structured critique.",
-    boldHighlight: "Transformed rough drafts into persuasive, publish-ready work through 1-on-1 coaching.",
-    description: "Competitively selected to diagnose weaknesses in logic, structure, and audience fit — equipping writers with critical thinking frameworks that elevated their work permanently.",
-    tag: "Critical Thinking & Coaching · UIC Writing Center",
+    title: "I make other people's writing better.",
+    boldHighlight: "Selected top 10% at UIC Writing Center to coach students one-on-one.",
+    description: "I find the weak spot in an argument — the leap in logic, the buried thesis, the wrong audience — and help the writer fix it themselves. That's harder than writing it for them.",
+    tag: "Critical Thinking · Coaching · UIC Writing Center",
     iconName: "pen",
     colorClass: "var(--green)"
   },
   {
     id: "research",
-    title: "Analyzed 10+ products to drive strategic decisions.",
-    boldHighlight: "Converted raw user research and accessibility audits into high-confidence recommendations.",
-    description: "Broke down complex usability challenges with structured problem-solving — delivering evidence-based insights that directly shaped product roadmaps and service pivots.",
-    tag: "Problem Solving & Product Analysis",
+    title: "I find what's actually broken.",
+    boldHighlight: "Analyzed 10+ products through usability audits and user research.",
+    description: "I test products the way real users use them, document where they fail, and recommend what to fix first. No opinions — evidence.",
+    tag: "Product Analysis · User Research · UX",
     iconName: "search",
     colorClass: "var(--rose)"
   },
   {
     id: "co-founder",
-    title: "Built operations from zero at an AI startup.",
-    boldHighlight: "Architected onboarding, content strategy, and service playbooks that powered Graaphene's launch.",
-    description: "Identified operational gaps, designed scalable workflows, and coordinated across parents, caregivers, and partners — turning a blank slate into a functioning AI-powered care marketplace.",
-    tag: "Problem Solving & Operations · Graaphene",
+    title: "I built a startup's operations from scratch.",
+    boldHighlight: "Co-founded Graaphene, an AI-powered care marketplace for working parents.",
+    description: "Onboarding, content strategy, provider matching, service playbooks — none of it existed. I figured out what was needed, built it, and made it work across parents and caregivers in Cook County.",
+    tag: "Operations · Startup · Graaphene",
     iconName: "headset",
     colorClass: "var(--blue)"
   },
   {
     id: "social",
-    title: "Produced 100+ campaigns from concept to publish.",
-    boldHighlight: "Drove measurable brand engagement across Instagram and Facebook with design-led storytelling.",
-    description: "Applied design thinking end-to-end — ideating formats, crafting copy, testing visuals, and iterating on performance data to maximize reach and conversion.",
-    tag: "Design Thinking & Content Strategy",
+    title: "I created 100+ pieces of content that people engaged with.",
+    boldHighlight: "Ran social media end-to-end — concept, copy, design, performance analysis.",
+    description: "I don't just post. I figure out what the audience responds to, make more of that, and cut what doesn't work. Every campaign has a number attached to it.",
+    tag: "Content Strategy · Social Media · Design",
     iconName: "megaphone",
     colorClass: "var(--violet)"
   },
   {
     id: "awards",
-    title: "Won multiple awards for persuasive pitch writing.",
-    boldHighlight: "Delivered competition-winning narratives powered by data, audience insight, and strategic framing.",
-    description: "Combined persuasive writing with negotiation instincts and structured argumentation — building pitch decks that consistently outperformed in high-stakes competitive evaluation.",
-    tag: "Negotiation & Persuasive Writing",
+    title: "I win when I pitch.",
+    boldHighlight: "Multiple awards for persuasive writing and competitive presentations.",
+    description: "I build a pitch the way a lawyer builds a case — data first, then narrative, then the ask. It works because the audience trusts the structure before they trust the conclusion.",
+    tag: "Persuasion · Pitch · Negotiation",
     iconName: "trophy",
     colorClass: "var(--amber)"
   }
@@ -62,7 +62,7 @@ export const WORK_DATA: WorkPiece[] = [
     id: "press-release",
     title: "Launched a Campus Accessibility Campaign",
     subtitle: "Challenge: Low awareness of information-design barriers affecting students with visual and physical needs at UIC.",
-    description: "Built the full PR strategy for 'Avenues of Access' — crafting the narrative, writing distribution-ready press assets, and coordinating outreach that mobilized 5 campus organizations and redesigned student senate communications.",
+    description: "I built the full PR strategy for 'Avenues of Access' — wrote the narrative, produced distribution-ready press assets, and coordinated outreach across 5 campus organizations. The student senate redesigned their communications as a result.",
     outcome: "5 organizations activated · Digital assets redesigned · Campus-wide narrative shift",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=800&q=80",
     url: "https://agosw2.myportfolio.com/press-release",
@@ -95,7 +95,7 @@ Aahana Goswami graduated Summa Cum Laude with a B.A. in Communication and Englis
     id: "usability-memo",
     title: "Uncovered 3 Critical UX Failures in DaVinci Resolve",
     subtitle: "Challenge: Blackmagic markets DaVinci Resolve as beginner-friendly, but new users can't complete basic tasks.",
-    description: "Ran a full heuristic evaluation across the entire user journey — install, onboarding, editing, and export — systematically documenting where the product breaks its own promise. Identified a hidden 10GB export limit, chronic crash loops, and missing onboarding that blocks adoption.",
+    description: "I tested every step of the user journey — install, onboarding, editing, export — and documented exactly where the product breaks its own promise. Found a hidden 10GB export limit, chronic crash loops, and zero onboarding.",
     outcome: "3 critical failures documented · Full journey mapped · Actionable redesign recommendations",
     image: "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&q=80",
     url: "https://agosw2.myportfolio.com/usability-memo",
@@ -174,7 +174,7 @@ In total, there are **three major issues** that severely impact the relationship
     id: "journalistic-piece",
     title: "Decoded How Gen Z Evaluates Brand Authenticity",
     subtitle: "Challenge: Brands invest in social advocacy campaigns but can't tell if Gen Z sees through it.",
-    description: "Surveyed 100 students and analyzed rhetoric patterns across TikTok and Instagram to map how Gen Z distinguishes authentic brand advocacy from performative messaging. Found that advocacy-led brands show 40% higher retention — but only when commitments are specific, not aesthetic.",
+    description: "I surveyed 100 students and analyzed rhetoric across TikTok and Instagram to understand how Gen Z tells real brand advocacy from performative posturing. The finding: advocacy-led brands see 40% higher retention, but only when the commitment is specific, not aesthetic.",
     outcome: "100-student survey · 40% retention insight · Strategic framework for brand trust",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
     url: "https://agosw2.myportfolio.com/journalistic-pieces",
@@ -211,7 +211,7 @@ As writing consultants and communication specialists, we find that storytelling 
     id: "article-palestine",
     title: "The Fight Against Child Marriage in Palestine",
     subtitle: "The Borgen Project · July 2021",
-    description: "Investigated how gender discrimination and poverty fuel child marriage in the Gaza Strip — and the grassroots men's movement that has prevented 50+ forced marriages.",
+    description: "I investigated how gender discrimination and poverty fuel child marriage in the Gaza Strip — and covered the grassroots men's movement that has prevented 50+ forced marriages.",
     outcome: "Published byline · 65% violence statistic surfaced · 50 marriages prevented",
     image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/Child-Marriage-in-Palestine-1030x773.jpg?lossy=1&strip=1&avif=1",
     url: "https://borgenproject.org/child-marriage-in-palestine/",
@@ -232,7 +232,7 @@ Freeh Abu T'ema is one of the first 20 ambassadors of change working to persuade
     id: "article-india",
     title: "Vax India Now: Fighting the COVID-19 Crisis in India",
     subtitle: "The Borgen Project · July 2021",
-    description: "Covered how Indian American communities organized a star-studded virtual fundraiser to address India's devastating COVID surge — 500K+ daily cases, 4.3% vaccinated.",
+    description: "I covered how Indian American communities organized a star-studded virtual fundraiser during India's devastating COVID surge — 500K+ daily cases, only 4.3% vaccinated.",
     outcome: "Published byline · Crisis awareness · Celebrity-driven advocacy spotlight",
     image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/Celebrities-Fight-Against-the-COVID-19-Crisis-in-India.jpg?lossy=1&strip=1&avif=1",
     url: "https://borgenproject.org/covid-19-crisis-in-india/",
@@ -251,7 +251,7 @@ Vax India Now hosted a virtual event on July 7, 2021 featuring Gloria Estefan, A
     id: "article-colombia",
     title: "Colombia's New Tax Plan Sparks Protests",
     subtitle: "The Borgen Project · September 2021",
-    description: "Analyzed how a $4 billion tax reform pushed 3 million more Colombians into poverty and triggered nationwide protests — examining the policy, the opposition, and the human cost.",
+    description: "I analyzed how a $4 billion tax reform pushed 3 million more Colombians into poverty and triggered nationwide protests — the policy, the opposition, and the human cost.",
     outcome: "Published byline · $4B policy analyzed · 3M poverty impact surfaced",
     image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/Colombia-Tax-Plan-1030x859.jpg?lossy=1&strip=1&avif=1",
     url: "https://borgenproject.org/colombias-new-tax-plan/",
@@ -272,7 +272,7 @@ Francisco Maltes, president of the Central Union of Workers, leads demonstration
     id: "article-south-africa",
     title: "Riots in South Africa Increase Food Insecurity",
     subtitle: "The Borgen Project · July 2021",
-    description: "Reported on how political unrest following Zuma's imprisonment ransacked 200+ malls and deepened food scarcity — requiring 25,000 troops to restore order.",
+    description: "I reported on how political unrest after Zuma's imprisonment led to 200+ ransacked malls and deepened food scarcity — requiring 25,000 troops to restore order.",
     outcome: "Published byline · 200+ malls ransacked · 25K troops deployed",
     image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/riots-in-South-Africa-1-300x160.jpg?lossy=1&strip=1&avif=1",
     url: "https://borgenproject.org/riots-in-south-africa/",
@@ -289,7 +289,7 @@ Looters ransacked more than **200 shopping malls.** For people living in poverty
     id: "article-spain",
     title: "New Efforts in Fighting Sexual Violence in Spain",
     subtitle: "The Borgen Project · July 2021",
-    description: "Covered Spain's landmark 'yes means yes' consent bill — tracing the 5-year legislative fight from the wolfpack case to a law redefining rape with sentences up to 15 years.",
+    description: "I covered Spain's landmark 'yes means yes' consent bill — the 5-year fight from the wolfpack case to a law redefining rape with sentences up to 15 years.",
     outcome: "Published byline · Landmark legislation covered · Consent framework analyzed",
     image: "https://b1332256.smushcdn.com/1332256/wp-content/uploads/SEXUAL-VIOLENCE-IN-SPAIN-e1628679771232.jpg?lossy=1&strip=1&avif=1",
     url: "https://borgenproject.org/sexual-violence-in-spain/",
@@ -308,7 +308,7 @@ The bill is based on the **"yes means yes"** model of sexual consent. Under the 
     id: "article-tuition",
     title: "The Price of Success: Is Paying College Tuition Worth It?",
     subtitle: "UIC Bonfire · November 2024 · Co-authored with Gaby Perez",
-    description: "Investigated how 70% of UIC students struggle with tuition costs, with 65% skipping textbooks and 20% failing courses as a result — proposing MAP grant expansion as a solution.",
+    description: "I investigated how 70% of UIC students struggle with tuition — 65% skip textbooks, 20% fail courses as a result. Co-authored a policy proposal for MAP grant expansion.",
     outcome: "Published byline · 70% student struggle documented · Policy solution proposed",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=800&q=80",
     url: "https://bonfire.digital.uic.edu/opinion/the-price-of-success-is-paying-college-tuition-worth-it/",
@@ -329,7 +329,7 @@ The authors conclude by urging student participation in electoral processes as t
     id: "resume",
     title: "Full Résumé — Experience, Skills & Honors",
     subtitle: "Summa Cum Laude · 4.0 GPA · Writing Center · Graaphene · Dean's List",
-    description: "Summa Cum Laude graduate in Communication and English Literature, with startup operations experience, competitive writing awards, and a track record of turning ambiguity into structured outcomes.",
+    description: "Summa Cum Laude, 4.0 GPA, Communication & English Literature. Startup operations, competitive writing awards, and a track record of making messy problems clear.",
     outcome: "Summa Cum Laude · 4.0 GPA · Multiple awards · 2 professional roles",
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80",
     url: "https://agosw2.myportfolio.com/resume",
@@ -398,8 +398,8 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "Feb 2025 – Present",
     logo: "/images/logos/uic.png",
     description: [
-      "Coordinate monthly community engagement initiatives based on real-life skills development — implementing targeted strategies including one-on-one conversations and relationship building.",
-      "Manage a residential floor of students, resolving conflicts, enforcing policies, and fostering an inclusive living environment."
+      "I run a residential floor — resolving conflicts, enforcing policy, and building a community where students actually talk to each other.",
+      "I design monthly programs around practical life skills, not icebreakers. The goal is relationships that outlast the semester."
     ],
     skills: ["People Management", "Leadership", "Conflict Resolution", "Community Building"],
     type: "work"
@@ -411,10 +411,10 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "Jan 2025 – May 2026",
     logo: "/images/logos/uic.png",
     description: [
-      "Selected through a competitive application process (top 10% — 5 of 57 applicants) to deliver one-on-one writing consultations to a diverse student population.",
-      "Coach students on structural clarity, argumentation, audience analysis, and revision strategies across academic disciplines."
+      "Selected top 10% (5 of 57 applicants). I sit with students one-on-one and help them see what's wrong with their argument — then they fix it.",
+      "I coach on structure, logic, audience, and revision across every discipline. The skill isn't knowing grammar — it's diagnosing weak thinking."
     ],
-    skills: ["Editing", "People Management", "Critical Thinking", "Coaching", "Pedagogy"],
+    skills: ["Editing", "Critical Thinking", "Coaching", "Pedagogy"],
     type: "work"
   },
   {
@@ -424,10 +424,10 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "Aug 2024 – May 2026",
     logo: "/images/logos/greatlakes.png",
     description: [
-      "Collaborated with a student fellow to champion full transparency within the cost of college education — event planning, surveying 600+ students, and advocating for policy change.",
-      "Co-authored and published 'The Price of Success — Is Paying College Tuition Worth It?' in UIC Bonfire."
+      "I surveyed 600+ students on the real cost of college, organized events, and pushed for policy change around tuition transparency.",
+      "Co-authored 'The Price of Success — Is Paying College Tuition Worth It?' published in UIC Bonfire."
     ],
-    skills: ["Research Skills", "Communication", "Event Planning", "Advocacy", "Data Analysis"],
+    skills: ["Research", "Communication", "Event Planning", "Advocacy", "Data Analysis"],
     type: "advocacy"
   },
   {
@@ -437,11 +437,11 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "May 2021 – Sep 2023",
     logo: "/images/logos/graaphene.png",
     description: [
-      "Built operations, user engagement processes, and service delivery from the ground up for a backup childcare startup serving working parents — alongside one other co-founder.",
-      "Created operational playbooks, matching protocols, and SLAs between parents and certified childcare providers across Cook County.",
-      "Produced 100+ pieces of branded content across Instagram, driving parent engagement and provider acquisition. [View content work →](https://www.instagram.com/graaphene/)"
+      "I co-built this from nothing — an AI-powered care marketplace connecting working parents with childcare providers in Cook County.",
+      "I wrote the playbooks, designed the matching protocols, set up the SLAs, and handled everything operational while my co-founder handled the tech.",
+      "I created 100+ pieces of branded content on Instagram that actually drove sign-ups. [View content work →](https://www.instagram.com/graaphene/)"
     ],
-    skills: ["Creative Writing", "Communication", "Operations", "Business Development", "Social Media", "Content Strategy"],
+    skills: ["Operations", "Business Development", "Social Media", "Content Strategy"],
     type: "work"
   },
   {
@@ -451,9 +451,9 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "Jun 2023 – Aug 2023",
     logo: "/images/logos/naonow.png",
     description: [
-      "Developed content strategy and produced editorial assets for a digital platform, translating complex ideas into engaging, audience-focused narratives."
+      "I wrote and planned content for an ed-tech platform — taking complex ideas and making them clear enough for any audience to act on."
     ],
-    skills: ["Content Development", "Creative Writing", "Digital Media"],
+    skills: ["Content Strategy", "Creative Writing", "Digital Media"],
     type: "work"
   },
   {
@@ -463,7 +463,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "May 2022 – Aug 2022",
     logo: "/images/logos/futurefounders.png",
     description: [
-      "Participated in an entrepreneurship-focused internship program, developing teamwork, creative writing, and business development skills in a startup ecosystem."
+      "I learned how startups actually work — pitching, building teams, writing business plans, and shipping under pressure."
     ],
     skills: ["Teamwork", "Creative Writing", "Entrepreneurship", "Business Planning"],
     type: "work"
@@ -475,8 +475,8 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "Aug 2023 – May 2026",
     logo: "/images/logos/uic.png",
     description: [
-      "Summa Cum Laude · GPA: 4.0/4.0. Coursework in Literature, Philosophy, Critical Reasoning, and Technical Writing.",
-      "Activities: Sigma Tau Delta, UIC Honors College, Faculty Union, Red Shoes Review Assistant Editor, UIC Writing Center Tutor."
+      "4.0 GPA. Studied literature, philosophy, critical reasoning, and technical writing.",
+      "Sigma Tau Delta, Honors College, Faculty Union, Red Shoes Review Assistant Editor, Writing Center Tutor."
     ],
     skills: ["Strategic Communications", "Rhetorical Analysis", "Critical Reasoning", "Philosophy"],
     type: "education"
@@ -488,9 +488,9 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "May 2017 – Jun 2017",
     logo: "/images/logos/secondcity.png",
     description: [
-      "Won 50% scholarship to attend summer camp. Developed creative thinking, active listening, brainstorming, and performance confidence through improv and stand-up."
+      "Won a 50% scholarship. Learned to think on my feet, listen actively, and perform under pressure — skills I use in every presentation."
     ],
-    skills: ["Improv Comedy", "Communication", "Creative Thinking", "Public Speaking"],
+    skills: ["Improv", "Communication", "Creative Thinking", "Public Speaking"],
     type: "education"
   },
   {
@@ -500,7 +500,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "Jul 2017",
     logo: "/images/logos/niu.png",
     description: [
-      "Sharpened foundational skills in writing stories, poetry, and screenplays — learning to overcome emotional filters that block creative inspiration."
+      "Wrote stories, poetry, and screenplays. Learned to get past the inner critic and just write."
     ],
     skills: ["Creative Writing", "Storytelling", "Poetry"],
     type: "education"
@@ -512,7 +512,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     period: "2018 – 2023",
     logo: "/images/logos/conant.png",
     description: [
-      "Foundation in liberal arts and sciences with emphasis on analytical writing, communication, and leadership."
+      "Where I first learned to write clearly, argue well, and lead."
     ],
     skills: ["Liberal Arts", "Leadership", "Academic Writing"],
     type: "education"

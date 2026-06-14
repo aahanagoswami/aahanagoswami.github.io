@@ -11,13 +11,14 @@ export default function Resume() {
         @media print {
           body * { visibility: hidden; }
           #resume-content, #resume-content * { visibility: visible; }
-          #resume-content { position: absolute; left: 0; top: 0; width: 100%; padding: 0.5in; font-size: 11pt; }
+          #resume-content { position: absolute; left: 0; top: 0; width: 100%; padding: 0.4in 0.5in; font-size: 10pt; }
           .no-print { display: none !important; }
           a { color: #000 !important; text-decoration: none !important; }
-          h1 { font-size: 18pt; }
-          h2 { font-size: 13pt; border-bottom: 1pt solid #000; padding-bottom: 2pt; margin-bottom: 6pt; }
-          h3 { font-size: 11pt; }
-          p, li { font-size: 10.5pt; line-height: 1.4; }
+          h1 { font-size: 16pt; margin-bottom: 2pt; }
+          h2 { font-size: 11pt; border-bottom: 0.5pt solid #000; padding-bottom: 1pt; margin-bottom: 4pt; }
+          h3 { font-size: 10pt; }
+          p, li { font-size: 9.5pt; line-height: 1.3; }
+          section { margin-bottom: 8pt; }
         }
       `}</style>
 
@@ -44,208 +45,178 @@ export default function Resume() {
             style={{ background: "var(--card)", border: "1px solid var(--hair)", color: "var(--ink)" }}
           >
             {/* Header */}
-            <div className="text-center mb-6" style={{ borderBottom: "2px solid var(--hair)", paddingBottom: "16px" }}>
+            <div className="text-center mb-4" style={{ borderBottom: "2px solid var(--hair)", paddingBottom: "12px" }}>
               <h1 className="text-3xl font-bold tracking-tight" style={{ color: "var(--ink)" }}>AAHANA GOSWAMI</h1>
-              <p className="text-sm mt-2" style={{ color: "var(--ink-soft)" }}>
+              <p className="text-sm mt-1" style={{ color: "var(--ink-soft)" }}>
                 Chicago, IL · <a href="mailto:aasignshere@gmail.com" style={{ color: "var(--blue)" }}>aasignshere@gmail.com</a> · <a href="https://www.linkedin.com/in/aahana-goswami" style={{ color: "var(--blue)" }}>linkedin.com/in/aahana-goswami</a> · <a href="https://aahanagoswami.github.io" style={{ color: "var(--blue)" }}>aahanagoswami.github.io</a>
               </p>
             </div>
 
             {/* Summary */}
-            <section className="mb-5">
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Summary</h2>
-              <p className="text-[15px] leading-relaxed" style={{ color: "var(--ink)" }}>
-                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products — including this portfolio, shipped end-to-end with Claude Code. Coached 50+ writers at UIC, led a campus accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Early startup experience creating content and supporting operations at Graaphene. Fluent in Claude, ChatGPT, Gemini, and Canva AI for research, drafting, and strategy.
+            <section className="mb-4">
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Summary</h2>
+              <p className="text-[14px] leading-snug" style={{ color: "var(--ink)" }}>
+                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products — including this portfolio, shipped end-to-end with Claude Code. Coached 50+ writers at UIC, led an accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Fluent in Claude, ChatGPT, Gemini, and Canva AI.
               </p>
             </section>
 
             {/* Experience */}
-            <section className="mb-5">
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Experience</h2>
+            <section className="mb-4">
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Experience</h2>
 
-              <div className="mb-4">
+              <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Resident Assistant</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Feb 2025 – Present</span>
+                  <h3 className="font-bold text-[14px]">Resident Assistant</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Feb 2025 – Present</span>
                 </div>
-                <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>University of Illinois Chicago</p>
-                <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Manage a residential floor of students, resolving conflicts, enforcing policy, and building inclusive community through monthly life-skills programming</li>
-                  <li>Design targeted engagement initiatives including one-on-one conversations and relationship-building strategies</li>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>University of Illinois Chicago</p>
+                <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
+                  <li>Manage a residential floor — resolving conflicts, enforcing policy, and building community through monthly programming</li>
                 </ul>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Writing Consultant</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Jan 2025 – May 2026</span>
+                  <h3 className="font-bold text-[14px]">Writing Consultant</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Jan 2025 – May 2026</span>
                 </div>
-                <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>UIC Writing Center</p>
-                <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Selected through competitive process (top 10% — 5 of 57 applicants) to deliver one-on-one writing consultations across disciplines</li>
-                  <li>Coach students on argumentation, structural clarity, audience analysis, and revision strategies — diagnosing weaknesses in logic and helping writers fix them independently</li>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>UIC Writing Center</p>
+                <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
+                  <li>Selected top 10% (5 of 57 applicants) to deliver one-on-one writing consultations across disciplines</li>
+                  <li>Coach students on argumentation, structural clarity, and revision — diagnosing logic gaps and building independent writers</li>
                 </ul>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Believe in Students Intern</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Aug 2024 – May 2026</span>
+                  <h3 className="font-bold text-[14px]">Believe in Students Intern</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Aug 2024 – May 2026</span>
                 </div>
-                <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Great Lakes FAST Fund Consortium</p>
-                <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Surveyed 600+ students on college cost transparency, organized advocacy events, and pushed for tuition policy change</li>
-                  <li>Co-authored and published "The Price of Success — Is Paying College Tuition Worth It?" in UIC Bonfire</li>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Great Lakes FAST Fund Consortium</p>
+                <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
+                  <li>Surveyed 600+ students on college cost transparency; co-authored "The Price of Success" published in UIC Bonfire</li>
                 </ul>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Content & Operations Support</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2021 – Sep 2023</span>
+                  <h3 className="font-bold text-[14px]">Content & Operations Support</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>May 2021 – Sep 2023</span>
                 </div>
-                <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Graaphene — AI-Powered Care Marketplace</p>
-                <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Created social media content for Instagram, helping the startup communicate with parents and childcare providers across Cook County</li>
-                  <li>Supported operational planning and helped present the product concept to stakeholders</li>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Graaphene — AI-Powered Care Marketplace</p>
+                <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
+                  <li>Created social media content and supported operational planning for a startup serving childcare providers across Cook County</li>
                 </ul>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Content Developer — Intern</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Jun 2023 – Aug 2023</span>
+                  <h3 className="font-bold text-[14px]">Content Developer — Intern</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Jun 2023 – Aug 2023</span>
                 </div>
-                <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Nao Now</p>
-                <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Developed content strategy and produced editorial assets for an ed-tech platform, translating complex ideas into clear, audience-focused narratives</li>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Nao Now</p>
+                <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
+                  <li>Produced editorial assets for an ed-tech platform, translating complex ideas into clear, audience-focused narratives</li>
                 </ul>
               </div>
 
-              <div className="mb-4">
+              <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Summer Intern</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2022 – Aug 2022</span>
+                  <h3 className="font-bold text-[14px]">Summer Intern</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>May 2022 – Aug 2022</span>
                 </div>
-                <p className="text-sm italic mb-1" style={{ color: "var(--ink-soft)" }}>Future Founders</p>
-                <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                  <li>Completed entrepreneurship-focused internship: pitching business plans, building cross-functional teams, and developing creative writing and business development skills</li>
-                  <li>Wrote, directed, recorded, and presented a video project end-to-end — from script to final delivery</li>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Future Founders</p>
+                <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
+                  <li>Pitched business plans, built cross-functional teams; wrote, directed, and presented a video project end-to-end</li>
                 </ul>
               </div>
             </section>
 
             {/* Education */}
-            <section className="mb-5">
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Education</h2>
+            <section className="mb-4">
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Education</h2>
 
-              <div className="mb-3">
+              <div className="mb-2">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">University of Illinois Chicago (UIC)</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>Aug 2023 – May 2026</span>
+                  <h3 className="font-bold text-[14px]">University of Illinois Chicago (UIC)</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Aug 2023 – May 2026</span>
                 </div>
-                <p className="text-[15px] italic">B.A. in Communication & English Literature — Summa Cum Laude, GPA: 4.0/4.0</p>
-                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
-                  Sigma Tau Delta Honor Society · UIC Honors College · Red Shoes Review Assistant Editor · Writing Center Tutor · Faculty Union · Dean's List
+                <p className="text-[13px] italic">B.A. in Communication & English Literature — Summa Cum Laude, GPA: 4.0/4.0</p>
+                <p className="text-xs mt-0.5" style={{ color: "var(--ink)" }}>
+                  Sigma Tau Delta Honor Society · UIC Honors College · Dean's List (all semesters) · Red Shoes Review Assistant Editor · Writing Center Tutor
                 </p>
               </div>
 
-              <div className="mb-3">
+              <div className="mb-2">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">POW! ZAM! BAM!: Superheroes in Media — Tokyo, Japan</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2024 – Jun 2024</span>
+                  <h3 className="font-bold text-[14px]">POW! ZAM! BAM!: Superheroes in Media — Tokyo, Japan</h3>
+                  <span className="text-xs" style={{ color: "var(--ink-soft)" }}>May – Jun 2024</span>
                 </div>
-                <p className="text-[15px] italic">Study Abroad Program in Global Asian Studies</p>
-                <p className="text-sm mt-1" style={{ color: "var(--ink)" }}>
-                  Studied how superhero narratives shape cultural identity across Japanese and American media — analyzing anime, manga, and film through the lens of digital media, storytelling, and cross-cultural communication.
-                </p>
+                <p className="text-[13px] italic">UIC Study Abroad · Analyzed superhero narratives across Japanese and American media through digital media and cross-cultural communication</p>
               </div>
 
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">The Second City</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>May 2017 – Jun 2017</span>
+              <div className="flex justify-between items-baseline mb-2">
+                <div>
+                  <h3 className="font-bold text-[14px] inline">The Second City</h3>
+                  <span className="text-[13px] italic ml-2">Improvisation & Stand-up Comedy — 50% Scholarship</span>
                 </div>
-                <p className="text-[15px] italic">Improvisation & Stand-up Comedy — 50% Scholarship Recipient</p>
-              </div>
-
-              <div>
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">James B. Conant High School</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2018 – 2023</span>
-                </div>
-                <p className="text-[15px] italic">High School Diploma — Liberal Arts & Sciences</p>
+                <span className="text-xs" style={{ color: "var(--ink-soft)" }}>2017</span>
               </div>
             </section>
 
             {/* Projects & Publications */}
-            <section className="mb-5">
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Projects & Publications</h2>
+            <section className="mb-4">
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Projects & Publications</h2>
 
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Avenues of Access — Campus Accessibility Campaign</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2024</span>
-                </div>
-                <p className="text-[14px]" style={{ color: "var(--ink)" }}>
-                  Built and executed full PR strategy — press release, stakeholder outreach, narrative design — mobilizing 5 campus organizations and redesigning student senate communications
+              <div className="mb-2">
+                <h3 className="font-bold text-[14px] inline">Avenues of Access</h3>
+                <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2024</span>
+                <p className="text-[13px]" style={{ color: "var(--ink)" }}>
+                  Full PR strategy — press release, stakeholder outreach, narrative design — mobilizing 5 campus organizations
                 </p>
               </div>
 
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">DaVinci Resolve Usability Analysis</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2024</span>
-                </div>
-                <p className="text-[14px]" style={{ color: "var(--ink)" }}>
-                  Conducted full heuristic evaluation of the user journey — install through export — documenting 3 critical UX failures and delivering actionable redesign recommendations
+              <div className="mb-2">
+                <h3 className="font-bold text-[14px] inline">DaVinci Resolve Usability Analysis</h3>
+                <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2024</span>
+                <p className="text-[13px]" style={{ color: "var(--ink)" }}>
+                  Heuristic evaluation of the full user journey — documented 3 critical UX failures with redesign recommendations
                 </p>
               </div>
 
-              <div className="mb-3">
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">Gen Z Brand Authenticity Study</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2024</span>
-                </div>
-                <p className="text-[14px]" style={{ color: "var(--ink)" }}>
-                  Surveyed 100 students and analyzed rhetoric patterns across TikTok and Instagram to map how Gen Z evaluates brand advocacy — found 40% higher retention for brands with specific commitments
+              <div className="mb-2">
+                <h3 className="font-bold text-[14px] inline">Gen Z Brand Authenticity Study</h3>
+                <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2024</span>
+                <p className="text-[13px]" style={{ color: "var(--ink)" }}>
+                  Surveyed 100 students on TikTok/Instagram rhetoric — found 40% higher retention for brands with specific commitments
                 </p>
               </div>
 
               <div>
-                <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[15px]">The Borgen Project — Published Journalist</h3>
-                  <span className="text-sm" style={{ color: "var(--ink-soft)" }}>2021</span>
-                </div>
-                <p className="text-[14px]" style={{ color: "var(--ink)" }}>
-                  6 published bylines covering child marriage in Palestine, India's COVID crisis, Colombia's tax reform, South Africa's food insecurity, and Spain's consent legislation
+                <h3 className="font-bold text-[14px] inline">The Borgen Project</h3>
+                <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2021</span>
+                <p className="text-[13px]" style={{ color: "var(--ink)" }}>
+                  6 published bylines covering child marriage in Palestine, India's COVID crisis, Colombia's tax reform, and more
                 </p>
               </div>
             </section>
 
             {/* Skills */}
-            <section className="mb-5">
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Skills</h2>
-              <div className="text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                <p><strong>Communication:</strong> Strategic Communications, Persuasive Writing, Public Relations, AP Style, Stakeholder Alignment, Pitch Development, Rhetorical Analysis</p>
-                <p><strong>Research & Analysis:</strong> User Research, Heuristic Evaluation, Consumer Behavior Analysis, Survey Design, Data Synthesis, Policy Research, Critical Thinking</p>
-                <p><strong>Content & Design:</strong> Content Strategy, Social Media Management, Campaign Design, Brand Storytelling, Editorial Writing, Copywriting</p>
-                <p><strong>Operations:</strong> Startup Operations, Process Design, Playbook Development, Cross-functional Coordination, Project Management</p>
-                <p><strong>Technology:</strong> Claude AI, ChatGPT, Gemini, Canva AI, Microsoft Office, Google Workspace, Adobe Portfolio</p>
+            <section className="mb-4">
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Skills</h2>
+              <div className="text-[13px] space-y-0.5" style={{ color: "var(--ink)" }}>
+                <p><strong>Communication & Research:</strong> Strategic Communications, Persuasive Writing, Public Relations, Rhetorical Analysis, User Research, Heuristic Evaluation, Survey Design</p>
+                <p><strong>Content & Operations:</strong> Content Strategy, Social Media, Campaign Design, Editorial Writing, Copywriting, Project Management</p>
+                <p><strong>Technology:</strong> Claude AI, Claude Code, ChatGPT, Gemini, Canva AI, GitHub Pages, Microsoft Office, Google Workspace</p>
               </div>
             </section>
 
-            {/* Awards & Honors */}
+            {/* Awards */}
             <section>
-              <h2 className="text-lg font-bold uppercase tracking-wide mb-2" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "4px" }}>Awards & Honors</h2>
-              <ul className="list-disc pl-5 text-[14px] space-y-1" style={{ color: "var(--ink)" }}>
-                <li>Summa Cum Laude — University of Illinois Chicago, 4.0 GPA</li>
-                <li>Sigma Tau Delta International English Honor Society</li>
-                <li>UIC Honors College</li>
-                <li>Dean's List (all semesters)</li>
-                <li>50% Scholarship — The Second City Improvisation Program</li>
-                <li>Multiple awards for persuasive pitch writing and competitive presentations</li>
-              </ul>
+              <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Awards & Honors</h2>
+              <p className="text-[13px]" style={{ color: "var(--ink)" }}>
+                Summa Cum Laude (4.0 GPA) · Sigma Tau Delta International English Honor Society · UIC Honors College · Dean's List (all semesters) · 50% Scholarship, The Second City · Multiple awards for persuasive pitch writing
+              </p>
             </section>
           </div>
         </div>

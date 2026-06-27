@@ -874,7 +874,7 @@ function MarkdownRenderer({ content }: { content: string }) {
 
     // Horizontal Rule
     if (line === "---") {
-      renderedElements.push(<hr key={i} className="my-6 border-[#cbd5e1]/40" />);
+      renderedElements.push(<hr key={i} className="my-6 border-[var(--hair)]" />);
       continue;
     }
 
@@ -882,7 +882,7 @@ function MarkdownRenderer({ content }: { content: string }) {
     if (line.startsWith("> ")) {
       const text = line.substring(2).replace(/"/g, '"');
       renderedElements.push(
-        <blockquote key={i} className="pl-4 border-l-4 border-[#0a66c2]/80 italic text-[#48484a] my-4 leading-relaxed font-sans text-sm md:text-base bg-slate-50/70 py-2 pr-2 rounded-r-lg">
+        <blockquote key={i} className="pl-4 border-l-4 border-[var(--blue)] italic text-[var(--ink-soft)] my-4 leading-relaxed font-sans text-sm md:text-base bg-[var(--tag-bg)] py-2 pr-2 rounded-r-lg">
           {parseInline(text)}
         </blockquote>
       );
@@ -892,7 +892,7 @@ function MarkdownRenderer({ content }: { content: string }) {
     // Headers
     if (line.startsWith("# ")) {
       renderedElements.push(
-        <h1 key={i} className="text-2xl md:text-3xl font-extrabold tracking-tight text-[#1d1d1f] mt-8 mb-4 font-sans leading-tight">
+        <h1 key={i} className="text-2xl md:text-3xl font-extrabold tracking-tight text-[var(--ink)] mt-8 mb-4 font-sans leading-tight">
           {parseInline(line.substring(2))}
         </h1>
       );
@@ -900,7 +900,7 @@ function MarkdownRenderer({ content }: { content: string }) {
     }
     if (line.startsWith("## ")) {
       renderedElements.push(
-        <h2 key={i} className="text-xl md:text-2xl font-bold tracking-tight text-[#1d1d1f] mt-6 mb-3 font-sans leading-tight">
+        <h2 key={i} className="text-xl md:text-2xl font-bold tracking-tight text-[var(--ink)] mt-6 mb-3 font-sans leading-tight">
           {parseInline(line.substring(3))}
         </h2>
       );
@@ -908,7 +908,7 @@ function MarkdownRenderer({ content }: { content: string }) {
     }
     if (line.startsWith("### ")) {
       renderedElements.push(
-        <h3 key={i} className="text-base md:text-lg font-bold tracking-tight text-[#1d1d1f] mt-5 mb-2 font-sans">
+        <h3 key={i} className="text-base md:text-lg font-bold tracking-tight text-[var(--ink)] mt-5 mb-2 font-sans">
           {parseInline(line.substring(4))}
         </h3>
       );
@@ -918,7 +918,7 @@ function MarkdownRenderer({ content }: { content: string }) {
     // List Items
     if (line.startsWith("* ")) {
       renderedElements.push(
-        <li key={i} className="list-disc ml-5 mb-2 text-[#424245] text-sm leading-relaxed">
+        <li key={i} className="list-disc ml-5 mb-2 text-[var(--ink)] text-sm leading-relaxed">
           {parseInline(line.substring(2))}
         </li>
       );
@@ -928,7 +928,7 @@ function MarkdownRenderer({ content }: { content: string }) {
       const match = line.match(/^(\d+)\.\s(.*)/);
       if (match) {
         renderedElements.push(
-          <li key={i} className="list-decimal ml-5 mb-2 text-[#424245] text-sm leading-relaxed" style={{ listStyleType: "decimal" }}>
+          <li key={i} className="list-decimal ml-5 mb-2 text-[var(--ink)] text-sm leading-relaxed" style={{ listStyleType: "decimal" }}>
             {parseInline(match[2])}
           </li>
         );
@@ -938,7 +938,7 @@ function MarkdownRenderer({ content }: { content: string }) {
 
     // Normal Paragraph
     renderedElements.push(
-      <p key={i} className="mb-4 text-[#424245] text-sm md:text-base leading-relaxed">
+      <p key={i} className="mb-4 text-[var(--ink)] text-sm md:text-base leading-relaxed">
         {parseInline(line)}
       </p>
     );
@@ -966,7 +966,7 @@ function parseInline(text: string): ReactNode[] {
         i++;
       }
       i += 2; 
-      parts.push(<strong key={i} className="font-bold text-[#1d1d1f]">{boldText}</strong>);
+      parts.push(<strong key={i} className="font-bold text-[var(--ink)]">{boldText}</strong>);
     } else if (text[i] === "[" && text.indexOf("]", i) > -1) {
       const closeBracket = text.indexOf("]", i);
       const openParen = text.indexOf("(", closeBracket);
@@ -980,7 +980,7 @@ function parseInline(text: string): ReactNode[] {
         const linkText = text.substring(i + 1, closeBracket);
         const linkUrl = text.substring(openParen + 1, closeParen);
         parts.push(
-          <a key={i} href={linkUrl} target="_blank" rel="noopener noreferrer" className="text-[#0a66c2] hover:underline font-semibold inline-flex items-center gap-0.5">
+          <a key={i} href={linkUrl} target="_blank" rel="noopener noreferrer" className="text-[var(--blue)] hover:underline font-semibold inline-flex items-center gap-0.5">
             {linkText}
           </a>
         );

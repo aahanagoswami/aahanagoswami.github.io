@@ -243,7 +243,7 @@ export default function App() {
                 <span className="sub">Not an engineer. I build things anyway.</span>
               </h1>
               <p className="hero-lede">
-                Summa Cum Laude, Communication & English Literature, UIC. I use AI the way most people use Google — every day, for everything — and I've gotten good enough to ship real products with it.
+                Summa Cum Laude, Communication & English Literature, UIC. I use AI the way most people use Google, every day, for everything, and I've gotten good enough to ship real products with it.
               </p>
 
               <div className="hero-cta">
@@ -279,7 +279,7 @@ export default function App() {
           <div className="max-w-3xl">
             <h2 className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: "var(--ink-soft)" }}>About Me</h2>
             <p className="about-statement" style={{ color: "var(--ink)" }}>
-              I'm a communications person who figured out how to build. I made <span style={{ color: "var(--blue)" }}>this entire site</span> with Claude Code — wrote the spec, prompted the code, debugged the deploy, shipped it to GitHub Pages. No engineer involved. At <span style={{ color: "var(--blue)" }}>UIC</span>, I coached 50+ writers to fix their own arguments, led an accessibility campaign that mobilized 5 organizations, and ran product teardowns that found real UX failures. I got my first taste of startup life at <span style={{ color: "var(--blue)" }}>Graaphene</span> as a teenager — creating content and supporting operations for a care marketplace. I use <span style={{ color: "var(--blue)" }}>Claude, ChatGPT, and Gemini</span> the way most people use a search bar — every day, for real work, not demos.
+              I'm a communications person who figured out how to build. I made <span style={{ color: "var(--blue)" }}>this entire site</span> with Claude Code: wrote the spec, prompted the code, debugged the deploy, shipped it to GitHub Pages. No engineer involved. At <span style={{ color: "var(--blue)" }}>UIC</span>, I coached 50+ writers to fix their own arguments, led an accessibility campaign that mobilized 5 organizations, and ran product teardowns that found real UX failures. I got my first taste of startup life at <span style={{ color: "var(--blue)" }}>Graaphene</span> as a teenager, creating content and supporting operations for a care marketplace. I use <span style={{ color: "var(--blue)" }}>Claude, ChatGPT, and Gemini</span> the way most people use a search bar, every day, for real work, not demos.
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function App() {
               What I do well. <span style={{ color: "var(--ink-soft)" }}>And how I know.</span>
             </h2>
             <p className="mt-3 text-[19px]" style={{ color: "var(--ink-soft)" }}>
-              Each of these came from real work — not coursework, not theory.
+              Each of these came from real work, not coursework, not theory.
             </p>
           </div>
 
@@ -333,7 +333,7 @@ export default function App() {
                 Where I've worked. <span style={{ color: "var(--ink-soft)" }}>And what I did there.</span>
               </h2>
               <p className="mt-3 text-[19px]" style={{ color: "var(--ink-soft)" }}>
-                Startups, research, writing, advocacy — every role taught me something I use daily.
+                Startups, research, writing, advocacy: every role taught me something I use daily.
               </p>
             </div>
 
@@ -606,7 +606,7 @@ export default function App() {
 
                     {selectedWork.id === "usability-memo" && (
                       <div className="mt-8 pt-6" style={{ borderTop: "1px solid var(--hair)" }}>
-                        <h3 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--ink)" }}>Video Demo — Editing in DaVinci Resolve</h3>
+                        <h3 className="text-sm font-semibold uppercase tracking-wider mb-4" style={{ color: "var(--ink)" }}>Video Demo: Editing in DaVinci Resolve</h3>
                         <video controls className="w-full rounded-xl shadow-lg" preload="metadata">
                           <source src="/videos/davinci-resolve-demo.mp4" type="video/mp4" />
                         </video>
@@ -658,7 +658,7 @@ export default function App() {
                   Let's talk.
                 </h2>
                 <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--ink-soft)" }}>
-                  I want to work where clear thinking and AI fluency actually help people — at nonprofits, in public service, on teams solving hard problems with small budgets. I'm at my best when I'm figuring out what an organization needs, building it, and showing them how to run it without me. Open to fellowships, consulting, and full-time roles.
+                  I want to work where clear thinking and AI fluency actually help people: at nonprofits, in public service, on teams solving hard problems with small budgets. I'm at my best when I'm figuring out what an organization needs, building it, and showing them how to run it without me. Open to fellowships, consulting, and full-time roles.
                 </p>
 
                 <div className="flex flex-col gap-4 max-w-sm">
@@ -833,7 +833,7 @@ export default function App() {
       <section className="py-6 max-w-[1120px] mx-auto px-6">
         <div className="connect-banner rounded-[28px] p-10 md:p-14 text-center">
           <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Let's build something that matters.</h2>
-          <p className="mt-3 max-w-lg mx-auto">Looking for the right team — where I can think clearly, build fast, and make people's work easier.</p>
+          <p className="mt-3 max-w-lg mx-auto">Looking for the right team, where I can think clearly, build fast, and make people's work easier.</p>
           <div className="mt-8 flex gap-4 justify-center flex-wrap">
             <a className="btn primary px-6 py-3 rounded-full text-sm font-medium bg-white text-[#1d1d1f] hover:bg-slate-100 transition-colors" href="https://www.linkedin.com/in/aahana-goswami" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a className="btn line px-6 py-3 rounded-full text-sm font-medium border border-[#4a4a4e] text-white hover:border-white transition-colors focus:ring-1 focus:ring-white/40" href="#connect">Leave a Note</a>
@@ -847,7 +847,7 @@ export default function App() {
         <div className="max-w-[1120px] mx-auto px-6">
           <p className="mb-3">© {new Date().getFullYear()} Aahana Goswami · University of Illinois Chicago</p>
           <p className="text-sm font-medium mb-1" style={{ color: "var(--ink-soft)" }}>
-            I built this site myself using <span style={{ color: "var(--blue)" }}>Claude Code</span>, React, and GitHub Pages — no CS degree needed.
+            I built this site myself using <span style={{ color: "var(--blue)" }}>Claude Code</span>, React, and GitHub Pages, no CS degree needed.
           </p>
           <p style={{ color: "var(--ink-soft)", opacity: 0.7 }}>
             I write the spec. AI writes the code. I ship the product.

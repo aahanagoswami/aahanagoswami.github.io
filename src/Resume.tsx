@@ -56,7 +56,7 @@ export default function Resume() {
             <section className="mb-4">
               <h2 className="text-lg font-bold uppercase tracking-wide mb-1" style={{ color: "var(--ink)", borderBottom: "1px solid var(--hair)", paddingBottom: "3px" }}>Summary</h2>
               <p className="text-[14px] leading-snug" style={{ color: "var(--ink)" }}>
-                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products — including this portfolio, shipped end-to-end with Claude Code. Coached 50+ writers at UIC, led an accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Fluent in Claude, ChatGPT, Gemini, and Canva AI.
+                Summa Cum Laude graduate in Communication & English Literature (4.0 GPA) who uses AI tools daily to build real products, including this portfolio, shipped end-to-end with Claude Code. Coached 50+ writers at UIC, led an accessibility campaign across 5 organizations, and published 6+ bylines on global policy. Fluent in Claude, ChatGPT, Gemini, and Canva AI.
               </p>
             </section>
 
@@ -71,7 +71,7 @@ export default function Resume() {
                 </div>
                 <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>University of Illinois Chicago</p>
                 <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
-                  <li>Manage a residential floor — resolving conflicts, enforcing policy, and building community through monthly programming</li>
+                  <li>Manage a residential floor: resolving conflicts, enforcing policy, and building community through monthly programming</li>
                 </ul>
               </div>
 
@@ -83,7 +83,7 @@ export default function Resume() {
                 <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>UIC Writing Center</p>
                 <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
                   <li>Selected top 10% (5 of 57 applicants) to deliver one-on-one writing consultations across disciplines</li>
-                  <li>Coach students on argumentation, structural clarity, and revision — diagnosing logic gaps and building independent writers</li>
+                  <li>Coach students on argumentation, structural clarity, and revision, diagnosing logic gaps and building independent writers</li>
                 </ul>
               </div>
 
@@ -103,7 +103,7 @@ export default function Resume() {
                   <h3 className="font-bold text-[14px]">Content & Operations Support</h3>
                   <span className="text-xs" style={{ color: "var(--ink-soft)" }}>May 2021 – Sep 2023</span>
                 </div>
-                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Graaphene — AI-Powered Care Marketplace</p>
+                <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Graaphene, AI-Powered Care Marketplace</p>
                 <ul className="list-disc pl-5 text-[13px] space-y-0.5 mt-0.5" style={{ color: "var(--ink)" }}>
                   <li>Created social media content and supported operational planning for a startup serving childcare providers across Cook County</li>
                 </ul>
@@ -111,7 +111,7 @@ export default function Resume() {
 
               <div className="mb-3">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[14px]">Content Developer — Intern</h3>
+                  <h3 className="font-bold text-[14px]">Content Developer, Intern</h3>
                   <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Jun 2023 – Aug 2023</span>
                 </div>
                 <p className="text-xs italic" style={{ color: "var(--ink-soft)" }}>Nao Now</p>
@@ -141,7 +141,7 @@ export default function Resume() {
                   <h3 className="font-bold text-[14px]">University of Illinois Chicago (UIC)</h3>
                   <span className="text-xs" style={{ color: "var(--ink-soft)" }}>Aug 2023 – May 2026</span>
                 </div>
-                <p className="text-[13px] italic">B.A. in Communication & English Literature — Summa Cum Laude, GPA: 4.0/4.0</p>
+                <p className="text-[13px] italic">B.A. in Communication & English Literature, Summa Cum Laude, GPA: 4.0/4.0</p>
                 <p className="text-xs mt-0.5" style={{ color: "var(--ink)" }}>
                   Sigma Tau Delta Honor Society · UIC Honors College · Dean's List (all semesters) · Red Shoes Review Assistant Editor · Writing Center Tutor
                 </p>
@@ -149,7 +149,7 @@ export default function Resume() {
 
               <div className="mb-2">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="font-bold text-[14px]">POW! ZAM! BAM!: Superheroes in Media — Tokyo, Japan</h3>
+                  <h3 className="font-bold text-[14px]">POW! ZAM! BAM!: Superheroes in Media, Tokyo, Japan</h3>
                   <span className="text-xs" style={{ color: "var(--ink-soft)" }}>May – Jun 2024</span>
                 </div>
                 <p className="text-[13px] italic">UIC Study Abroad · Analyzed superhero narratives across Japanese and American media through digital media and cross-cultural communication</p>
@@ -158,7 +158,7 @@ export default function Resume() {
               <div className="flex justify-between items-baseline mb-2">
                 <div>
                   <h3 className="font-bold text-[14px] inline">The Second City</h3>
-                  <span className="text-[13px] italic ml-2">Improvisation & Stand-up Comedy — 50% Scholarship</span>
+                  <span className="text-[13px] italic ml-2">Improvisation & Stand-up Comedy, 50% Scholarship</span>
                 </div>
                 <span className="text-xs" style={{ color: "var(--ink-soft)" }}>2017</span>
               </div>
@@ -172,7 +172,7 @@ export default function Resume() {
                 <h3 className="font-bold text-[14px] inline">Avenues of Access</h3>
                 <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2024</span>
                 <p className="text-[13px]" style={{ color: "var(--ink)" }}>
-                  Full PR strategy — press release, stakeholder outreach, narrative design — mobilizing 5 campus organizations
+                  Full PR strategy (press release, stakeholder outreach, narrative design) mobilizing 5 campus organizations
                 </p>
               </div>
 
@@ -180,7 +180,7 @@ export default function Resume() {
                 <h3 className="font-bold text-[14px] inline">DaVinci Resolve Usability Analysis</h3>
                 <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2024</span>
                 <p className="text-[13px]" style={{ color: "var(--ink)" }}>
-                  Heuristic evaluation of the full user journey — documented 3 critical UX failures with redesign recommendations
+                  Heuristic evaluation of the full user journey, documented 3 critical UX failures with redesign recommendations
                 </p>
               </div>
 
@@ -188,7 +188,7 @@ export default function Resume() {
                 <h3 className="font-bold text-[14px] inline">Gen Z Brand Authenticity Study</h3>
                 <span className="text-xs ml-2" style={{ color: "var(--ink-soft)" }}>2024</span>
                 <p className="text-[13px]" style={{ color: "var(--ink)" }}>
-                  Surveyed 100 students on TikTok/Instagram rhetoric — found 40% higher retention for brands with specific commitments
+                  Surveyed 100 students on TikTok/Instagram rhetoric, found 40% higher retention for brands with specific commitments
                 </p>
               </div>
 

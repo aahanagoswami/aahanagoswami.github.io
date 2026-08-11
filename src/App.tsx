@@ -236,14 +236,14 @@ export default function App() {
 
             <div>
               <div className="hero-kicker">
-                Communications · AI · Strategy · Social Impact
+                Communications · Strategy · Social Impact
               </div>
               <h1 className="hero-title">
                 Aahana Goswami.<br />
                 <span className="sub">Not an engineer. I build things anyway.</span>
               </h1>
               <p className="hero-lede">
-                Summa Cum Laude, Communication & English Literature, UIC. I use AI the way most people use Google, every day, for everything, and I've gotten good enough to ship real products with it.
+                Summa Cum Laude, Communications & English Literature, UIC. I'm constantly finding new ways to innovate, create, and most importantly: invent.
               </p>
 
               <div className="hero-cta">
@@ -279,7 +279,7 @@ export default function App() {
           <div className="max-w-3xl">
             <h2 className="text-xs font-semibold uppercase tracking-widest mb-4" style={{ color: "var(--ink-soft)" }}>About Me</h2>
             <p className="about-statement" style={{ color: "var(--ink)" }}>
-              I'm a communications person who figured out how to build. I made <span style={{ color: "var(--blue)" }}>this entire site</span> with Claude Code: wrote the spec, prompted the code, debugged the deploy, shipped it to GitHub Pages. No engineer involved. At <span style={{ color: "var(--blue)" }}>UIC</span>, I coached 50+ writers to fix their own arguments, led an accessibility campaign that mobilized 5 organizations, and ran product teardowns that found real UX failures. I got my first taste of startup life at <span style={{ color: "var(--blue)" }}>Graaphene</span> as a teenager, creating content and supporting operations for a care marketplace. I use <span style={{ color: "var(--blue)" }}>Claude, ChatGPT, and Gemini</span> the way most people use a search bar, every day, for real work, not demos.
+              I'm a writer and communicator who figured out how to build actual products with just my words. I made <span style={{ color: "var(--blue)" }}>this entire site</span> through Claude Code: wrote the spec, prompted the code, debugged the deploy, shipped it to GitHub Pages. No engineer involved. At <span style={{ color: "var(--blue)" }}>UIC</span>, I coached 50+ writers to fix their own arguments, led an accessibility campaign that mobilized 5 organizations, and ran product teardowns that found real UX failures. I got my first taste of startup life at <span style={{ color: "var(--blue)" }}>Graaphene</span> as a teenager, creating content and supporting operations for a care marketplace.
             </p>
           </div>
         </div>
